@@ -13,4 +13,6 @@ Varshitha Nalluri			-	Module Designer and Documentation Specialist<br/>
 Teja Kumar Muppala	            	-	UI/UX Design Lead<br/>
 Khalida Parveen    			-	Quality Assurance and Testing Specialist<br/>
 
+This week we have finalized the project and started building UI Prototypes. Need to build database for the login page and for the project for the upcoming couple of weeks.
+
 
