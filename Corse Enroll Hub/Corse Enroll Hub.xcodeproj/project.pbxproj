@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
+		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
+		49A010AF2B890BF600C7C581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AE2B890BF600C7C581 /* ViewController.swift */; };
+		49A010B22B890BF600C7C581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B02B890BF600C7C581 /* Main.storyboard */; };
+		49A010B42B890BF700C7C581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B32B890BF700C7C581 /* Assets.xcassets */; };
+		49A010B72B890BF700C7C581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */; };
+		49A010C22B890BF700C7C581 /* Corse_Enroll_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010C12B890BF700C7C581 /* Corse_Enroll_HubTests.swift */; };
+		49A010CC2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010CB2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift */; };
+		49A010CE2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49A010BE2B890BF700C7C581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A0109F2B890BF600C7C581 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A010A62B890BF600C7C581;
+			remoteInfo = "Corse Enroll Hub";
+		};
+		49A010C82B890BF700C7C581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A0109F2B890BF600C7C581 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A010A62B890BF600C7C581;
+			remoteInfo = "Corse Enroll Hub";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49A010AC2B890BF600C7C581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49A010AE2B890BF600C7C581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49A010B12B890BF600C7C581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49A010B32B890BF700C7C581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49A010B62B890BF700C7C581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49A010B82B890BF700C7C581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A010BD2B890BF700C7C581 /* Corse Enroll HubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corse Enroll HubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A010C12B890BF700C7C581 /* Corse_Enroll_HubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubTests.swift; sourceTree = "<group>"; };
+		49A010C72B890BF700C7C581 /* Corse Enroll HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corse Enroll HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A010CB2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubUITests.swift; sourceTree = "<group>"; };
+		49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49A010A42B890BF600C7C581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A010BA2B890BF700C7C581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A010C42B890BF700C7C581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49A0109E2B890BF600C7C581 = {
+			isa = PBXGroup;
+			children = (
+				49A010A92B890BF600C7C581 /* Corse Enroll Hub */,
+				49A010C02B890BF700C7C581 /* Corse Enroll HubTests */,
+				49A010CA2B890BF700C7C581 /* Corse Enroll HubUITests */,
+				49A010A82B890BF600C7C581 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49A010A82B890BF600C7C581 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */,
+				49A010BD2B890BF700C7C581 /* Corse Enroll HubTests.xctest */,
+				49A010C72B890BF700C7C581 /* Corse Enroll HubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49A010A92B890BF600C7C581 /* Corse Enroll Hub */ = {
+			isa = PBXGroup;
+			children = (
+				49A010AA2B890BF600C7C581 /* AppDelegate.swift */,
+				49A010AC2B890BF600C7C581 /* SceneDelegate.swift */,
+				49A010AE2B890BF600C7C581 /* ViewController.swift */,
+				49A010B02B890BF600C7C581 /* Main.storyboard */,
+				49A010B32B890BF700C7C581 /* Assets.xcassets */,
+				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
+				49A010B82B890BF700C7C581 /* Info.plist */,
+			);
+			path = "Corse Enroll Hub";
+			sourceTree = "<group>";
+		};
+		49A010C02B890BF700C7C581 /* Corse Enroll HubTests */ = {
+			isa = PBXGroup;
+			children = (
+				49A010C12B890BF700C7C581 /* Corse_Enroll_HubTests.swift */,
+			);
+			path = "Corse Enroll HubTests";
+			sourceTree = "<group>";
+		};
+		49A010CA2B890BF700C7C581 /* Corse Enroll HubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49A010CB2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift */,
+				49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */,
+			);
+			path = "Corse Enroll HubUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49A010A62B890BF600C7C581 /* Corse Enroll Hub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A010D12B890BF700C7C581 /* Build configuration list for PBXNativeTarget "Corse Enroll Hub" */;
+			buildPhases = (
+				49A010A32B890BF600C7C581 /* Sources */,
+				49A010A42B890BF600C7C581 /* Frameworks */,
+				49A010A52B890BF600C7C581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Corse Enroll Hub";
+			productName = "Corse Enroll Hub";
+			productReference = 49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49A010BC2B890BF700C7C581 /* Corse Enroll HubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A010D42B890BF700C7C581 /* Build configuration list for PBXNativeTarget "Corse Enroll HubTests" */;
+			buildPhases = (
+				49A010B92B890BF700C7C581 /* Sources */,
+				49A010BA2B890BF700C7C581 /* Frameworks */,
+				49A010BB2B890BF700C7C581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49A010BF2B890BF700C7C581 /* PBXTargetDependency */,
+			);
+			name = "Corse Enroll HubTests";
+			productName = "Corse Enroll HubTests";
+			productReference = 49A010BD2B890BF700C7C581 /* Corse Enroll HubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49A010C62B890BF700C7C581 /* Corse Enroll HubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A010D72B890BF700C7C581 /* Build configuration list for PBXNativeTarget "Corse Enroll HubUITests" */;
+			buildPhases = (
+				49A010C32B890BF700C7C581 /* Sources */,
+				49A010C42B890BF700C7C581 /* Frameworks */,
+				49A010C52B890BF700C7C581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49A010C92B890BF700C7C581 /* PBXTargetDependency */,
+			);
+			name = "Corse Enroll HubUITests";
+			productName = "Corse Enroll HubUITests";
+			productReference = 49A010C72B890BF700C7C581 /* Corse Enroll HubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49A0109F2B890BF600C7C581 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					49A010A62B890BF600C7C581 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					49A010BC2B890BF700C7C581 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 49A010A62B890BF600C7C581;
+					};
+					49A010C62B890BF700C7C581 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 49A010A62B890BF600C7C581;
+					};
+				};
+			};
+			buildConfigurationList = 49A010A22B890BF600C7C581 /* Build configuration list for PBXProject "Corse Enroll Hub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49A0109E2B890BF600C7C581;
+			productRefGroup = 49A010A82B890BF600C7C581 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49A010A62B890BF600C7C581 /* Corse Enroll Hub */,
+				49A010BC2B890BF700C7C581 /* Corse Enroll HubTests */,
+				49A010C62B890BF700C7C581 /* Corse Enroll HubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49A010A52B890BF600C7C581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A010B72B890BF700C7C581 /* LaunchScreen.storyboard in Resources */,
+				49A010B42B890BF700C7C581 /* Assets.xcassets in Resources */,
+				49A010B22B890BF600C7C581 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A010BB2B890BF700C7C581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A010C52B890BF700C7C581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49A010A32B890BF600C7C581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A010AF2B890BF600C7C581 /* ViewController.swift in Sources */,
+				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
+				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A010B92B890BF700C7C581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A010C22B890BF700C7C581 /* Corse_Enroll_HubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A010C32B890BF700C7C581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A010CC2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift in Sources */,
+				49A010CE2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49A010BF2B890BF700C7C581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A010A62B890BF600C7C581 /* Corse Enroll Hub */;
+			targetProxy = 49A010BE2B890BF700C7C581 /* PBXContainerItemProxy */;
+		};
+		49A010C92B890BF700C7C581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A010A62B890BF600C7C581 /* Corse Enroll Hub */;
+			targetProxy = 49A010C82B890BF700C7C581 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49A010B02B890BF600C7C581 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A010B12B890BF600C7C581 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A010B62B890BF700C7C581 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49A010CF2B890BF700C7C581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49A010D02B890BF700C7C581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49A010D22B890BF700C7C581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26H39P394L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Corse Enroll Hub/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.spring24.cs44643.sec03.Corse-Enroll-Hub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49A010D32B890BF700C7C581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26H39P394L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Corse Enroll Hub/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.spring24.cs44643.sec03.Corse-Enroll-Hub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49A010D52B890BF700C7C581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26H39P394L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.spring24.cs44643.sec03.Corse-Enroll-HubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Corse Enroll Hub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Corse Enroll Hub";
+			};
+			name = Debug;
+		};
+		49A010D62B890BF700C7C581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26H39P394L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.spring24.cs44643.sec03.Corse-Enroll-HubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Corse Enroll Hub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Corse Enroll Hub";
+			};
+			name = Release;
+		};
+		49A010D82B890BF700C7C581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26H39P394L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.spring24.cs44643.sec03.Corse-Enroll-HubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Corse Enroll Hub";
+			};
+			name = Debug;
+		};
+		49A010D92B890BF700C7C581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26H39P394L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.spring24.cs44643.sec03.Corse-Enroll-HubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Corse Enroll Hub";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49A010A22B890BF600C7C581 /* Build configuration list for PBXProject "Corse Enroll Hub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A010CF2B890BF700C7C581 /* Debug */,
+				49A010D02B890BF700C7C581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A010D12B890BF700C7C581 /* Build configuration list for PBXNativeTarget "Corse Enroll Hub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A010D22B890BF700C7C581 /* Debug */,
+				49A010D32B890BF700C7C581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A010D42B890BF700C7C581 /* Build configuration list for PBXNativeTarget "Corse Enroll HubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A010D52B890BF700C7C581 /* Debug */,
+				49A010D62B890BF700C7C581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A010D72B890BF700C7C581 /* Build configuration list for PBXNativeTarget "Corse Enroll HubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A010D82B890BF700C7C581 /* Debug */,
+				49A010D92B890BF700C7C581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49A0109F2B890BF600C7C581 /* Project object */;
+}
