@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateAccountVC: UIViewController {
 
@@ -19,15 +20,19 @@ class CreateAccountVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func CreateAccountBTN(_ sender: UIButton) {
-        updateCreateAccountButtonState()
-    }
-    func updateCreateAccountButtonState() {
-           if let emailText = CreateemailTF.text, let passwordText = CreatepasswordTF.text {
-                    if let button = view.subviews.first(where: { $0 is UIButton }) as? UIButton {
-                        button.isEnabled = !emailText.isEmpty && !passwordText.isEmpty
-                    }
-                }
+        guard let email = CreateemailTF.text else { return }
+        guard let password = CreatepasswordTF.text else { return }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
+            if let e = error {
+                print("Error")
+            }
+            else{
+                self.performSegue(withIdentifier: "goToNext", sender: self)
+            }
         }
+    }
+    
     /*
     // MARK: - Navigation
 
