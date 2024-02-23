@@ -16,6 +16,8 @@
 		49A010C22B890BF700C7C581 /* Corse_Enroll_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010C12B890BF700C7C581 /* Corse_Enroll_HubTests.swift */; };
 		49A010CC2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010CB2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift */; };
 		49A010CE2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */; };
+		7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED02B891B5E00DF2A66 /* LoginVC.swift */; };
+		7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		49A010C72B890BF700C7C581 /* Corse Enroll HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corse Enroll HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010CB2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubUITests.swift; sourceTree = "<group>"; };
 		49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C06BED02B891B5E00DF2A66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				49A010AC2B890BF600C7C581 /* SceneDelegate.swift */,
 				49A010AE2B890BF600C7C581 /* ViewController.swift */,
 				49A010B02B890BF600C7C581 /* Main.storyboard */,
+				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
+				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
@@ -260,6 +266,8 @@
 			files = (
 				49A010AF2B890BF600C7C581 /* ViewController.swift in Sources */,
 				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
+				7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */,
+				7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

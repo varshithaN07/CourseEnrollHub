@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="185.49618320610685" y="72.535211267605632"/>
         </scene>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="KQN-eP-7zc">
             <objects>
-                <viewController id="ExT-KI-2Kv" customClass="ViewController" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ExT-KI-2Kv" customClass="LoginVC" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="koR-iC-gJn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Let's Go"/>
+                                <connections>
+                                    <action selector="loginletsgoBTN:" destination="ExT-KI-2Kv" eventType="touchUpInside" id="hzh-G0-9FA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xj2-k0-pYv">
                                 <rect key="frame" x="100" y="250" width="202" height="34"/>
@@ -73,13 +76,17 @@
                         <viewLayoutGuide key="safeArea" id="Lfc-Eu-Fxt"/>
                         <color key="backgroundColor" red="0.50744218269999997" green="0.84898222469999995" blue="0.93796588299999994" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1TN-rg-nlD"/>
+                    <navigationItem key="navigationItem" title="Login" id="1TN-rg-nlD" userLabel="Login"/>
+                    <connections>
+                        <outlet property="loginEmailTF" destination="Xj2-k0-pYv" id="Ke8-7f-PEL"/>
+                        <outlet property="loginpasswordTF" destination="ejA-CY-tip" id="OII-54-HmR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4G-jp-4cj" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1344.2748091603053" y="-206.33802816901411"/>
         </scene>
-        <!--View Controller-->
+        <!--Create an Account-->
         <scene sceneID="8uP-dy-TPU">
             <objects>
                 <viewController id="NTt-L2-6vi" customClass="ViewController" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
@@ -109,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="hiZ-xn-jxV"/>
                         <color key="backgroundColor" red="0.50744218269999997" green="0.84898222469999995" blue="0.93796588299999994" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6gH-DS-YLt"/>
+                    <navigationItem key="navigationItem" title="Create an Account" id="6gH-DS-YLt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxE-X4-RG0" sceneMemberID="firstResponder"/>
             </objects>
