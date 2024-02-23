@@ -9,13 +9,20 @@ import UIKit
 
 class CreateAccountVC: UIViewController {
 
+    
+    @IBOutlet weak var CreateemailTF: UITextField!
+    
+    @IBOutlet weak var CreatepasswordTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func CreateAccountBTN(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
