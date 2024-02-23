@@ -16,13 +16,18 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    
     @IBAction func CreateAccountBTN(_ sender: UIButton) {
+        updateCreateAccountButtonState()
     }
-    
+    func updateCreateAccountButtonState() {
+        if let emailText = CreateemailTF.text, let passwordText = CreatepasswordTF.text {
+            self.navigationItem.rightBarButtonItem?.isEnabled = !emailText.isEmpty && !passwordText.isEmpty
+        } else {
+            self.navigationItem.rightBarButtonItem?.isEnabled = false
+        }
+    }
     /*
     // MARK: - Navigation
 
