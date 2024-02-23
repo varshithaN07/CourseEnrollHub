@@ -22,12 +22,12 @@ class CreateAccountVC: UIViewController {
         updateCreateAccountButtonState()
     }
     func updateCreateAccountButtonState() {
-        if let emailText = CreateemailTF.text, let passwordText = CreatepasswordTF.text {
-            self.navigationItem.rightBarButtonItem?.isEnabled = !emailText.isEmpty && !passwordText.isEmpty
-        } else {
-            self.navigationItem.rightBarButtonItem?.isEnabled = false
+           if let emailText = CreateemailTF.text, let passwordText = CreatepasswordTF.text {
+                    if let button = view.subviews.first(where: { $0 is UIButton }) as? UIButton {
+                        button.isEnabled = !emailText.isEmpty && !passwordText.isEmpty
+                    }
+                }
         }
-    }
     /*
     // MARK: - Navigation
 

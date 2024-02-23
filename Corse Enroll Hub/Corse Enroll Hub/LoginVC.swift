@@ -19,7 +19,15 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginletsgoBTN(_ sender: UIButton) {
+        updateLoginButtonState()
     }
+    func updateLoginButtonState() {
+           if let emailText = loginEmailTF.text, let passwordText = loginpasswordTF.text {
+                    if let button = view.subviews.first(where: { $0 is UIButton }) as? UIButton {
+                        button.isEnabled = !emailText.isEmpty && !passwordText.isEmpty
+                    }
+                }
+        }
     
     /*
     // MARK: - Navigation
