@@ -29,11 +29,11 @@ This week we have finalized the project and started building UI Prototypes. Need
 In this Sprint we have contributed some useful commits to the project regarding login page:-
 
 Teja Kumar Muppala:<br/>
-Commit-1:
-Created 3 UI Screens and implemented navigation among them.
-Commit-2:
-Added text fields Email and Password for login and Create Account screens.
-Commit-3:
+Commit-1:<br/>
+Created 3 UI Screens and implemented navigation among them.<br/>
+Commit-2:<br/>
+Added text fields Email and Password for login and Create Account screens.<br/>
+Commit-3:<br/>
 Added background colors for all 3 UI Screens. <br/>
 
 Agraja Gottipati:<br/>
