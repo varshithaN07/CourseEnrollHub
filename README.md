@@ -37,30 +37,30 @@ Commit-3:<br/>
 Added background colors for all 3 UI Screens. <br/>
 
 Agraja Gottipati:<br/>
-Commit-1:
-Added firebase authentication packages to working directory.
-Commit-2:
-Created a home and added segue among home page and signup/signin screens.
-Commit-3:
+Commit-1:<br/>
+Added firebase authentication packages to working directory.<br/>
+Commit-2:<br/>
+Created a home and added segue among home page and signup/signin screens.<br/>
+Commit-3:<br/>
 Defined functionalities and segue identifiers to navigate among login/signup screens and home screen.<br/>
 
 Varshitha Nalluri:<br/>
-Commit-1:
-Created loginVC and Added connections to login page.
-Commit-2:
-Created createAccountVC class and added connections and outlets.
-Commit-3:
-Implemented functionality for create account and login methods.
-Commit-4:
+Commit-1:<br/>
+Created loginVC and Added connections to login page.<br/>
+Commit-2:<br/>
+Created createAccountVC class and added connections and outlets.<br/>
+Commit-3:<br/>
+Implemented functionality for create account and login methods.<br/>
+Commit-4:<br/>
 Disabled 'let go' and 'create an account' buttons initially.<br/>
 
 Khalida Parveen: <br/>
-Commit-1:
-Added image view and Home Screen UI elements
-Commit-2:
-Added new segue to navigate from signup screen to login screen
-Commit-3:
-Modified ‘create an AccountVC to override “goTo” segue with “jumpTo “
+Commit-1:<br/>
+Added image view and Home Screen UI elements.<br/>
+Commit-2:<br/>
+Added new segue to navigate from signup screen to login screen.<br/>
+Commit-3:<br/>
+Modified ‘create an AccountVC to override “goTo” segue with “jumpTo“.<br/>
 
 
 
