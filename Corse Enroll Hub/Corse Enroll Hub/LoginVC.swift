@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginVC: UIViewController {
 
@@ -19,15 +20,19 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginletsgoBTN(_ sender: UIButton) {
-        updateLoginButtonState()
-    }
-    func updateLoginButtonState() {
-           if let emailText = loginEmailTF.text, let passwordText = loginpasswordTF.text {
-                    if let button = view.subviews.first(where: { $0 is UIButton }) as? UIButton {
-                        button.isEnabled = !emailText.isEmpty && !passwordText.isEmpty
-                    }
-                }
+        guard let email = loginEmailTF.text else { return }
+        guard let password = loginpasswordTF.text else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { firebaseResult, error in
+            if let e = error {
+                print("Error")
+            }
+            else{
+                self.performSegue(withIdentifier: "goToNext", sender: self)
+            }
         }
+    }
+    
     
     /*
     // MARK: - Navigation

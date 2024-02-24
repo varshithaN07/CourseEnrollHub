@@ -95,6 +95,12 @@
                     <view key="view" contentMode="scaleToFill" id="4f6-sL-cdB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="An interactive  92953b80-2d72-4d75-a3b0-e57b60c2a68d" translatesAutoresizingMaskIntoConstraints="NO" id="9vB-g0-65h">
+                                <rect key="frame" x="39" y="228" width="319" height="422"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ezP-fa-j61"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -102,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YG-Fl-aVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2407" y="106"/>
+            <point key="canvasLocation" x="2406.8702290076335" y="105.63380281690141"/>
         </scene>
         <!--Create an Account-->
         <scene sceneID="8uP-dy-TPU">
@@ -171,6 +177,7 @@
         <segue reference="Fdn-LR-eNu"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="An interactive  92953b80-2d72-4d75-a3b0-e57b60c2a68d" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
