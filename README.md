@@ -8,19 +8,21 @@ Course-Enroll Hub is a user-friendly iOS application designed for efficient stud
 With a focus on performance optimization and adherence to best practices, Course-Enroll Hub aims to provide a secure and swift class registration experience for students, enhancing their academic journey.
 
 Roles& Responsibilities:<br/>
-Agraja Gottipati			-	Deployment and DB Management Expert<br/>
-Varshitha Nalluri			-	Module Designer and Documentation Specialist<br/>
-Teja Kumar Muppala	            	-	UI/UX Design Lead<br/>
-Khalida Parveen    			-	Quality Assurance and Testing Specialist<br/>
+Agraja Gottipati            -    Deployment and DB Management Expert<br/>
+Varshitha Nalluri            -    Module Designer and Documentation Specialist<br/>
+Teja Kumar Muppala                    -    UI/UX Design Lead<br/>
+Khalida Parveen                -    Quality Assurance and Testing Specialist<br/>
 
-Sprint-02
-
+**Sprint 02**
 This week we have finalized the project and started building UI Prototypes. Need to build database for the login page and for the project for the upcoming couple of weeks.
-UI Prototypes:
-
- 
-
-
-
+![Image 1](./images/image1.jpeg)
+![Image 2](./images/image2.jpeg)
+![Image 3](./images/image3.jpeg)
+![Image 4](./images/image4.jpeg)
+![Image 5](./images/image5.jpeg)
+![Image 6](./images/image6.jpeg)
+![Image 7](./images/image7.jpeg)
+![Image 8](./images/image8.jpeg)
+![Image 9](./images/image9.jpeg)
 
 
