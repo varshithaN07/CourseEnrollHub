@@ -28,7 +28,7 @@ class CreateAccountVC: UIViewController {
                 print("Error")
             }
             else{
-                self.performSegue(withIdentifier: "goToNext", sender: self)
+                self.performSegue(withIdentifier: "jumpTo", sender: self)
             }
         }
     }

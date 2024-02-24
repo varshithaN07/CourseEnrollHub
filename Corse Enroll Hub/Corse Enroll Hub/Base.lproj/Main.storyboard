@@ -154,7 +154,7 @@
                         <outlet property="CreateemailTF" destination="UWb-v1-Lcw" id="djB-LS-SZF"/>
                         <outlet property="CreatepasswordTF" destination="QRT-Zs-56e" id="Fua-Fl-VcS"/>
                         <segue destination="Mgt-u6-GEr" kind="show" identifier="goToNext" id="Fdn-LR-eNu"/>
-                        <segue destination="ExT-KI-2Kv" kind="show" id="wvV-Hp-22G"/>
+                        <segue destination="ExT-KI-2Kv" kind="show" identifier="jumpTo" id="wvV-Hp-22G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxE-X4-RG0" sceneMemberID="firstResponder"/>
@@ -182,7 +182,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Fdn-LR-eNu"/>
-        <segue reference="wvV-Hp-22G"/>
+        <segue reference="bQ6-Wq-d6c"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="An interactive  92953b80-2d72-4d75-a3b0-e57b60c2a68d" width="1024" height="1024"/>
