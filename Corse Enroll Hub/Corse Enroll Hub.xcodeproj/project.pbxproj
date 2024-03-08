@@ -35,6 +35,8 @@
 		1742570B2B895B3300441531 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1742570A2B895B3300441531 /* FirebaseRemoteConfigSwift */; };
 		1742570D2B895B3300441531 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1742570C2B895B3300441531 /* FirebaseStorage */; };
 		1742570F2B895B3300441531 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1742570E2B895B3300441531 /* FirebaseStorageCombine-Community */; };
+		17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */; };
+		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
 		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
 		49A010AF2B890BF600C7C581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AE2B890BF600C7C581 /* ViewController.swift */; };
@@ -67,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		174256D72B8959D600441531 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A010AC2B890BF600C7C581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,12 +167,14 @@
 				49A010AC2B890BF600C7C581 /* SceneDelegate.swift */,
 				49A010AE2B890BF600C7C581 /* ViewController.swift */,
 				49A010B02B890BF600C7C581 /* Main.storyboard */,
+				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
 				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
+				17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */,
 			);
 			path = "Corse Enroll Hub";
 			sourceTree = "<group>";
@@ -355,7 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A010AF2B890BF600C7C581 /* ViewController.swift in Sources */,
+				17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */,
 				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
+				17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */,
 				7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */,
 				7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
