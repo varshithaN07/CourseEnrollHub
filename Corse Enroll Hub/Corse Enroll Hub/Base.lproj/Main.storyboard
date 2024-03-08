@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -147,28 +148,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-e0-Qrf">
-                                                    <rect key="frame" x="10" y="10" width="183" height="131"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="110" id="IZ0-pW-y0R"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1s-p4b">
-                                                    <rect key="frame" x="203" y="21" width="160" height="109"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dCl-fs-Df4" userLabel="imageLBL">
+                                                    <rect key="frame" x="10" y="10" width="373" height="131"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-e0-Qrf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="131"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="110" id="IZ0-pW-y0R"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1s-p4b">
+                                                            <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="131"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="lBB-e0-Qrf" secondAttribute="bottom" constant="10" id="8W2-Zd-VVz"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="jp1-1s-p4b" secondAttribute="trailing" constant="10" id="AQU-5w-vDS"/>
-                                                <constraint firstItem="jp1-1s-p4b" firstAttribute="top" secondItem="Dgo-qH-XwO" secondAttribute="topMargin" constant="10" id="KWt-fl-ZjA"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="jp1-1s-p4b" secondAttribute="bottom" constant="10" id="M8d-m1-1Kq"/>
-                                                <constraint firstAttribute="trailing" secondItem="lBB-e0-Qrf" secondAttribute="trailing" constant="200" id="ZQg-Cx-CTL"/>
-                                                <constraint firstItem="lBB-e0-Qrf" firstAttribute="leading" secondItem="Dgo-qH-XwO" secondAttribute="leading" constant="10" id="ct3-jN-AN1"/>
-                                                <constraint firstItem="lBB-e0-Qrf" firstAttribute="top" secondItem="Dgo-qH-XwO" secondAttribute="top" constant="10" id="g0d-Vn-iL1"/>
-                                                <constraint firstItem="jp1-1s-p4b" firstAttribute="leading" secondItem="lBB-e0-Qrf" secondAttribute="trailing" constant="10" id="ooQ-va-eu4"/>
+                                                <constraint firstItem="dCl-fs-Df4" firstAttribute="leading" secondItem="Dgo-qH-XwO" secondAttribute="leading" constant="10" id="E5k-XR-Nd4"/>
+                                                <constraint firstAttribute="trailing" secondItem="dCl-fs-Df4" secondAttribute="trailing" constant="10" id="UZZ-2x-BVw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
