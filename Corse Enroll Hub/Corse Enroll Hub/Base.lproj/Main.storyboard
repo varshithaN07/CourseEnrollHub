@@ -153,19 +153,22 @@
                                                         <constraint firstAttribute="width" constant="110" id="IZ0-pW-y0R"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="stream" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1s-p4b">
-                                                    <rect key="frame" x="262" y="65" width="53" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1s-p4b">
+                                                    <rect key="frame" x="203" y="21" width="160" height="109"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="lBB-e0-Qrf" secondAttribute="bottom" constant="10" id="8W2-Zd-VVz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jp1-1s-p4b" secondAttribute="trailing" constant="10" id="AQU-5w-vDS"/>
+                                                <constraint firstItem="jp1-1s-p4b" firstAttribute="top" secondItem="Dgo-qH-XwO" secondAttribute="topMargin" constant="10" id="KWt-fl-ZjA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jp1-1s-p4b" secondAttribute="bottom" constant="10" id="M8d-m1-1Kq"/>
                                                 <constraint firstAttribute="trailing" secondItem="lBB-e0-Qrf" secondAttribute="trailing" constant="200" id="ZQg-Cx-CTL"/>
                                                 <constraint firstItem="lBB-e0-Qrf" firstAttribute="leading" secondItem="Dgo-qH-XwO" secondAttribute="leading" constant="10" id="ct3-jN-AN1"/>
                                                 <constraint firstItem="lBB-e0-Qrf" firstAttribute="top" secondItem="Dgo-qH-XwO" secondAttribute="top" constant="10" id="g0d-Vn-iL1"/>
+                                                <constraint firstItem="jp1-1s-p4b" firstAttribute="leading" secondItem="lBB-e0-Qrf" secondAttribute="trailing" constant="10" id="ooQ-va-eu4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

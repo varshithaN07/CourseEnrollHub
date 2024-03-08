@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DashboardVC: UIViewController,UITableViewDataSource {
+class DashboardVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
     struct Modules {
@@ -18,13 +18,15 @@ class DashboardVC: UIViewController,UITableViewDataSource {
         Modules(title: "Stream", imageName: "stream"),
         Modules(title: "Course", imageName: "course"),
         Modules(title: "Calendar", imageName: "calendar"),
-        Modules(title: "Cart", imageName: "cart")
+        Modules(title: "Cart", imageName: "cart"),
+        Modules(title: "Favorites", imageName: "favorites")
         
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
+        table.delegate = self
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,6 +39,11 @@ class DashboardVC: UIViewController,UITableViewDataSource {
         cell.iconImageView.image = UIImage(named: module.imageName)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
+    
     /*
     // MARK: - Navigation
 
