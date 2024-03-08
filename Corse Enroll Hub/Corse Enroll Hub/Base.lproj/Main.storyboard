@@ -17,8 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Enroll Hub" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpc-KH-Sxu">
+                                <rect key="frame" x="67" y="154" width="263" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OU-Jy-Rx6">
-                                <rect key="frame" x="114" y="444" width="165" height="118"/>
+                                <rect key="frame" x="-9" y="494" width="393" height="34.333333333333343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create an Account"/>
@@ -27,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clJ-6L-R2m">
-                                <rect key="frame" x="163" y="246" width="66" height="35"/>
+                                <rect key="frame" x="-9" y="536" width="393" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
@@ -35,6 +42,10 @@
                                     <segue destination="ExT-KI-2Kv" kind="show" id="bQ6-Wq-d6c"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ir4-gI-iCD">
+                                <rect key="frame" x="76" y="300" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.50744218274281339" green="0.84898222472905194" blue="0.93796588303149853" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185.49618320610685" y="72.535211267605632"/>
+            <point key="canvasLocation" x="183.96946564885496" y="72.535211267605632"/>
         </scene>
         <!--Login-->
         <scene sceneID="KQN-eP-7zc">
@@ -74,12 +85,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HK3-4p-mVF">
+                                <rect key="frame" x="81" y="103" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lfc-Eu-Fxt"/>
                         <color key="backgroundColor" red="0.50744218269999997" green="0.84898222469999995" blue="0.93796588299999994" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="1TN-rg-nlD" userLabel="Login"/>
                     <connections>
+                        <outlet property="imageView" destination="HK3-4p-mVF" id="mAx-mY-F7v"/>
                         <outlet property="loginEmailTF" destination="Xj2-k0-pYv" id="Ke8-7f-PEL"/>
                         <outlet property="loginpasswordTF" destination="ejA-CY-tip" id="OII-54-HmR"/>
                         <segue destination="Mgt-u6-GEr" kind="show" identifier="goToNext" id="6gE-zV-dZ5"/>
@@ -151,10 +167,10 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dCl-fs-Df4" userLabel="imageLBL">
                                                     <rect key="frame" x="10" y="10" width="373" height="131"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-e0-Qrf">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-e0-Qrf">
                                                             <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="131"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="110" id="IZ0-pW-y0R"/>
+                                                                <constraint firstAttribute="width" id="IZ0-pW-y0R"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1s-p4b">
@@ -226,6 +242,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VK6-De-Xcx">
+                                <rect key="frame" x="76" y="103" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hiZ-xn-jxV"/>
                         <color key="backgroundColor" red="0.50744218269999997" green="0.84898222469999995" blue="0.93796588299999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,6 +254,7 @@
                     <connections>
                         <outlet property="CreateemailTF" destination="UWb-v1-Lcw" id="djB-LS-SZF"/>
                         <outlet property="CreatepasswordTF" destination="QRT-Zs-56e" id="Fua-Fl-VcS"/>
+                        <outlet property="imageView" destination="VK6-De-Xcx" id="ZIn-7n-Ji8"/>
                         <segue destination="Mgt-u6-GEr" kind="show" identifier="goToNext" id="Fdn-LR-eNu"/>
                         <segue destination="ExT-KI-2Kv" kind="show" identifier="jumpTo" id="wvV-Hp-22G"/>
                     </connections>
@@ -267,6 +288,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="An interactive  92953b80-2d72-4d75-a3b0-e57b60c2a68d" width="1024" height="1024"/>
+        <image name="logo" width="170" height="150"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

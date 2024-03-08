@@ -11,11 +11,12 @@ import Firebase
 class LoginVC: UIViewController {
 
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loginEmailTF: UITextField!
     @IBOutlet weak var loginpasswordTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageView.image = UIImage(named: "logo")
         // Do any additional setup after loading the view.
     }
     

@@ -15,8 +15,12 @@ class CreateAccountVC: UIViewController {
     
     @IBOutlet weak var CreatepasswordTF: UITextField!
     
+   
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = UIImage(named: "logo")
         // Do any additional setup after loading the view.
     }
     @IBAction func CreateAccountBTN(_ sender: UIButton) {
