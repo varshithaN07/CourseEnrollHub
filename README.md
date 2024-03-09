@@ -62,5 +62,39 @@ Added new segue to navigate from signup screen to login screen.<br/>
 Commit-3:<br/>
 Modified ‘create an AccountVC to override “goTo” segue with “jumpTo“.<br/>
 
+**Sprint-4**
+In this Sprint we have contributed some useful commits to the project regarding login page:-
+
+Teja Kumar Muppala:
+
+Teja Kumar Muppala: Commit-1: Added Secure text and constraints for the login screen.
+
+Commit-2: Added forgot password and auto layout in login screen.
+
+Commit-3: Added confirm password and done auto layout for create account screen
+
+Agraja Gottipati:
+
+Commit-1: Created DashboardVC and added custom Table view as per requirement.
+
+Commit-2: Added TableViewDataSource and TableViewDelegate to DashboardVC.
+
+Commit-3: applied auto-layout to the login and register screens.
+
+Varshitha Nalluri:
+
+Commit-1: Created custom array(modules) for DashBoardTableView
+
+Commit-2: Added logo in assests and done with auto layout in table view.
+
+Commit-3: added image views in story board and created outlets in createAccountVC and LoginVC
+
+Khalida Parveen:
+
+Commit-1:
+
+Commit-2: Updated ReadMe
+
+Commit-3:
 
 
