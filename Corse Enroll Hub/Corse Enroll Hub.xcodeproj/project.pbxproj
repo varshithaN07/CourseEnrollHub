@@ -39,7 +39,6 @@
 		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
 		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
-		49A010AF2B890BF600C7C581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AE2B890BF600C7C581 /* ViewController.swift */; };
 		49A010B22B890BF600C7C581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B02B890BF600C7C581 /* Main.storyboard */; };
 		49A010B42B890BF700C7C581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B32B890BF700C7C581 /* Assets.xcassets */; };
 		49A010B72B890BF700C7C581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */; };
@@ -74,7 +73,6 @@
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A010AC2B890BF600C7C581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49A010AE2B890BF600C7C581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49A010B12B890BF600C7C581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49A010B32B890BF700C7C581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A010B62B890BF700C7C581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,6 +138,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491910D32BB3CD4500EC0101 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
+				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
+				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		491910D42BB3CD7200EC0101 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49A010AA2B890BF600C7C581 /* AppDelegate.swift */,
+				49A010AC2B890BF600C7C581 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		49A0109E2B890BF600C7C581 = {
 			isa = PBXGroup;
 			children = (
@@ -163,13 +180,9 @@
 		49A010A92B890BF600C7C581 /* Corse Enroll Hub */ = {
 			isa = PBXGroup;
 			children = (
-				49A010AA2B890BF600C7C581 /* AppDelegate.swift */,
-				49A010AC2B890BF600C7C581 /* SceneDelegate.swift */,
-				49A010AE2B890BF600C7C581 /* ViewController.swift */,
+				491910D42BB3CD7200EC0101 /* Supporting Files */,
 				49A010B02B890BF600C7C581 /* Main.storyboard */,
-				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
-				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
-				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
+				491910D32BB3CD4500EC0101 /* View Controllers */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
@@ -360,7 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A010AF2B890BF600C7C581 /* ViewController.swift in Sources */,
 				17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */,
 				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
 				17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */,
