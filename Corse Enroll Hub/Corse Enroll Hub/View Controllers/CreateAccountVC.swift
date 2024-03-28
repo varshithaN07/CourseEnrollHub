@@ -22,6 +22,14 @@ class CreateAccountVC: UIViewController {
         super.viewDidLoad()
         imageView.image = UIImage(named: "logo")
         // Do any additional setup after loading the view.
+        CreateemailTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        CreatepasswordTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+
+        // Align text fields vertically centered in the view
+        NSLayoutConstraint.activate([
+            CreateemailTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40),
+            CreatepasswordTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20)
+        ])
     }
     @IBAction func CreateAccountBTN(_ sender: UIButton) {
         guard let email = CreateemailTF.text else { return }
