@@ -18,6 +18,14 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         imageView.image = UIImage(named: "logo")
         // Do any additional setup after loading the view.
+        loginEmailTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginpasswordTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+
+        // Align text fields vertically centered in the view
+        NSLayoutConstraint.activate([
+            loginEmailTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40),
+            loginpasswordTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20)
+        ])
     }
     
     @IBAction func loginletsgoBTN(_ sender: UIButton) {
@@ -32,6 +40,7 @@ class LoginVC: UIViewController {
                 self.performSegue(withIdentifier: "goToNext", sender: self)
             }
         }
+        
     }
     
     
