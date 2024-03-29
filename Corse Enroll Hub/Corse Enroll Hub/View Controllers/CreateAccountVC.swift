@@ -18,32 +18,7 @@ class CreateAccountVC: UIViewController {
    
     @IBOutlet weak var imageView: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        imageView.image = UIImage(named: "logo")
-        // Do any additional setup after loading the view.
-        CreateemailTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        CreatepasswordTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 
-        // Align text fields vertically centered in the view
-        NSLayoutConstraint.activate([
-            CreateemailTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40),
-            CreatepasswordTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20)
-        ])
-    }
-    @IBAction func CreateAccountBTN(_ sender: UIButton) {
-        guard let email = CreateemailTF.text else { return }
-        guard let password = CreatepasswordTF.text else { return }
-        
-        Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
-            if let e = error {
-                print("Error")
-            }
-            else{
-                self.performSegue(withIdentifier: "jumpTo", sender: self)
-            }
-        }
-    }
     
     /*
     // MARK: - Navigation
