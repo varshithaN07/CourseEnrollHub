@@ -13,18 +13,26 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loginEmailTF: UITextField!
-    @IBOutlet weak var loginpasswordTF: UITextField!
+    @IBOutlet weak var loginpasswordTF: UITextField!{
+        didSet{
+            if((loginEmailTF) != nil){
+                loginpasswordTF.isEnabled = true
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = UIImage(named: "logo")
         // Do any additional setup after loading the view.
         loginEmailTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         loginpasswordTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-
+        loginpasswordTF.isEnabled = false
+        loginpasswordTF.isHidden = false
         // Align text fields vertically centered in the view
         NSLayoutConstraint.activate([
             loginEmailTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40),
             loginpasswordTF.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20)
+            
         ])
     }
     
@@ -35,9 +43,11 @@ class LoginVC: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { firebaseResult, error in
             if let e = error {
                 print("Error")
+                print("Invalid login details")
             }
             else{
-                self.performSegue(withIdentifier: "GoToNext", sender: self)
+                self.performSegue(withIdentifier: "goToNext", sender: self)
+                
             }
         }
         

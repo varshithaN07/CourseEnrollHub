@@ -38,6 +38,7 @@ class CreateAccountVC: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
             if let e = error {
                 print("Error")
+                print("invalid data")
             }
             else{
                 self.performSegue(withIdentifier: "jumpTo", sender: self)
