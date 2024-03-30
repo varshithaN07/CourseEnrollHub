@@ -37,7 +37,7 @@ class LoginVC: UIViewController {
                 print("Error")
             }
             else{
-                self.performSegue(withIdentifier: "goToNext", sender: self)
+                self.performSegue(withIdentifier: "GoToNext", sender: self)
             }
         }
         
