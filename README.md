@@ -97,4 +97,41 @@ Commit-2: Updated ReadMe
 
 Commit-3:
 
+**Sprint 05**
+In this Sprint we have contributed some useful commits to the project regarding forgot password and Courses page:-
+
+Teja Kumar Muppala:<br/>
+Commit-1:<br/>
+Changed VC’s and App Delegates.<br/>
+Commit-2:<br/>
+Created Segue and Collection View for Courses.<br/>
+Commit-3:<br/>
+Changed Create Account code. <br/>
+
+Agraja Gottipati:<br/>
+Commit-1:<br/>
+Added constraints to all the UI elements of Login screen.<br/>
+Commit-2:<br/>
+created splashvc and added entrypoint for application.<br/>
+Commit-3:<br/>
+Applied auto layout for ForgotPasswordVC and Implemented logic for cancel and segue functionalities.<br/>
+
+Varshitha Nalluri:<br/>
+Commit-1:<br/>
+Added Constraints to both text fields of create Account View.<br/>
+Commit-2:<br/>
+Added splash view.<br/>
+Commit-3:<br/>
+Added a ForgotPasswordVC and created a view with required UI elements.<br/>
+
+
+Khalida Parveen: <br/>
+Commit-1:<br/>
+<br/>
+Commit-2:<br/>
+<br/>
+Commit-3:<br/>
+<br/>
+
+
 
