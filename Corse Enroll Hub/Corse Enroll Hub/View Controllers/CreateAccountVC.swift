@@ -15,7 +15,6 @@ class CreateAccountVC: UIViewController {
     
     @IBOutlet weak var CreatepasswordTF: UITextField!
     
-   
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
