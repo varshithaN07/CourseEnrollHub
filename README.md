@@ -127,10 +127,13 @@ Added a ForgotPasswordVC and created a view with required UI elements.<br/>
 
 Khalida Parveen: <br/>
 Commit-1:<br/>
+Modified data for login page
 <br/>
 Commit-2:<br/>
+Made changes in CreateAccountVC
 <br/>
 Commit-3:<br/>
+Made Changes in DashboardVC
 <br/>
 
 
