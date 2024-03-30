@@ -19,7 +19,9 @@ class DashboardVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         Modules(title: "Course", imageName: "course"),
         Modules(title: "Calendar", imageName: "calendar"),
         Modules(title: "Cart", imageName: "cart"),
-        Modules(title: "Favorites", imageName: "favorites")
+        Modules(title: "Favorites", imageName: "favorites"),
+        Modules(title: "Professor", imageName: "professor")
+        
         
     ]
     
