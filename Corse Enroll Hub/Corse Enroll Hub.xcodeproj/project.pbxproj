@@ -87,7 +87,7 @@
 		49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7C06BED02B891B5E00DF2A66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
-		7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "View Controllers/ForgotPasswordViewController.swift"; sourceTree = "<group>"; };
+		7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
+				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
 				17599BD42BB65C08007BC50E /* SplashViewController.swift */,
 				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
@@ -187,7 +188,6 @@
 			children = (
 				491910D42BB3CD7200EC0101 /* Supporting Files */,
 				49A010B02B890BF600C7C581 /* Main.storyboard */,
-				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				491910D32BB3CD4500EC0101 /* View Controllers */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
