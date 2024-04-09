@@ -49,6 +49,7 @@
 		7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED02B891B5E00DF2A66 /* LoginVC.swift */; };
 		7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */; };
 		7C5FC3A72BB78A9200A53DF0 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */; };
+		7CB89DBE2BC5021F008AD9CE /* CourseRegister'ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB89DBD2BC5021F008AD9CE /* CourseRegister'ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		7C06BED02B891B5E00DF2A66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		7CB89DBD2BC5021F008AD9CE /* CourseRegister'ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseRegister'ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
+				7CB89DBD2BC5021F008AD9CE /* CourseRegister'ViewController.swift */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
 				17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */,
 			);
@@ -383,6 +386,7 @@
 				17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */,
 				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
 				17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */,
+				7CB89DBE2BC5021F008AD9CE /* CourseRegister'ViewController.swift in Sources */,
 				7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */,
 				7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */,
 				17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */,
