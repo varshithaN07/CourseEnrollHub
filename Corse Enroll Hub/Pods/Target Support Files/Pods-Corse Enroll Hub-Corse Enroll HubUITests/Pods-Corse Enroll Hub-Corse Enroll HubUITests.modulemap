@@ -1,0 +1,6 @@
+framework module Pods_Corse_Enroll_Hub_Corse_Enroll_HubUITests {
+  umbrella header "Pods-Corse Enroll Hub-Corse Enroll HubUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
