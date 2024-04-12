@@ -13,20 +13,21 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loginEmailTF: UITextField!
-    @IBOutlet weak var loginpasswordTF: UITextField!{
-        didSet{
-            if((loginEmailTF) != nil){
-                loginpasswordTF.isEnabled = true
-            }
-        }
-    }
+    @IBOutlet weak var loginpasswordTF: UITextField!
+//    {
+//        didSet{
+//            if((loginEmailTF) != nil){
+//                loginpasswordTF.isEnabled = true
+//            }
+//        }
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = UIImage(named: "logo")
         // Do any additional setup after loading the view.
         loginEmailTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         loginpasswordTF.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        loginpasswordTF.isEnabled = false
+        loginpasswordTF.isEnabled = true
         loginpasswordTF.isHidden = false
         // Align text fields vertically centered in the view
         NSLayoutConstraint.activate([
