@@ -16,16 +16,25 @@ class CourseRegisterViewController: UIViewController {
     let sectionTimings = "Mondays and Wednesdays, 10:00 AM - 12:00 PM"
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        // Call a function to update labels with sample data
-        updateLabels()
-    }
-    
-    func updateLabels() {
-        SectionLBL.text = sectionName
-        SectionTimingsLBL.text = sectionTimings
+            super.viewDidLoad()
+            updateLabels()
+        }
+        func updateLabels() {
+            guard let name = sectionName, !name.isEmpty else {
+                SectionLBL.text = "No data available"
+                return
+            }
+            guard let timings = sectionTimings, !timings.isEmpty else {
+                SectionTimingsLBL.text = "No timings available"
+                return
+            }
+            
+            SectionLBL.text = name
+            SectionTimingsLBL.text = timings
+            
+            SectionLBL.accessibilityLabel = "Section name: \(name)"
+            SectionTimingsLBL.accessibilityLabel = "Section timings: \(timings)"
+        }
     }
 
     /*
