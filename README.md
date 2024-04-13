@@ -134,3 +134,43 @@ Commit-3:<br/>
 Made Changes in DashboardVC.<br/>
 
 
+
+**Sprint 06**
+In this Sprint we have contributed some useful commits to the project regarding view controller pages and created viewcourse detailVC and course register detailVC:-
+
+Teja Kumar Muppala:<br/>
+Commit-1:<br/>
+Created table view controlled and worked on that for course selections<br/>
+Commit-2:<br/>
+Changed the app from split view to navigation<br/>
+Commit-3:<br/>
+Worked on the sections for the courses<br/>
+
+Agraja Gottipati:<br/>
+Commit-1:<br/>
+Added CourseRegisterDetailVC and created required connections<br/>
+Commit-2:<br/>
+Created new View CourseDetailVC<br/>
+Commit-3:<br/>
+Added EnrollCourseScene for Selected course registration<br/>
+
+Varshitha Nalluri:<br/>
+Commit-1:<br/>
+Added Another Screen for Cart<br/>
+Commit-2:<br/>
+Backtracked the working repository to fix bugs and packag…<br/>
+Commit-3:<br/>
+Created CourseRegisterVC scene and Outlets for that scene<br/>
+
+
+Khalida Parveen: <br/>
+Commit-1:<br/>
+Made changes in ForgotPasswordViewController<br/>
+Commit-2:<br/>
+Made changes in LoginVC and SplashViewController<br/>
+Commit-3:<br/>
+Made changes in CourseRegisterViewController<br/>
+
+
+
+
