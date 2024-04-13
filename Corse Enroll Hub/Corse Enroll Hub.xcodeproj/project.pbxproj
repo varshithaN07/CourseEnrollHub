@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1731B5D52BCA2B030040A2A4 /* CourseDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */; };
 		174256D82B8959D600441531 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 174256D72B8959D600441531 /* GoogleService-Info.plist */; };
 		17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17599BD42BB65C08007BC50E /* SplashViewController.swift */; };
 		17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailVC.swift; sourceTree = "<group>"; };
 		174256D72B8959D600441531 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17599BD42BB65C08007BC50E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
 				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
+				1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */,
 				17599BD42BB65C08007BC50E /* SplashViewController.swift */,
 				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
 			);
@@ -390,6 +393,7 @@
 				7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */,
 				7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */,
 				17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */,
+				1731B5D52BCA2B030040A2A4 /* CourseDetailVC.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
