@@ -8,20 +8,35 @@
 import UIKit
 
 class SplashViewController: UIViewController {
+    private let delayDuration: TimeInterval = 3.0
+    private var activityIndicator: UIActivityIndicatorView?
 
     override func viewDidLoad() {
-            super.viewDidLoad()
-            
+        super.viewDidLoad()
+        activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator?.center = view.center
+        view.addSubview(activityIndicator!)
+        activityIndicator?.startAnimating()
+        view.isUserInteractionEnabled = false
         navigateToLoginAfterDelay()
-         }
+    }
 
-         func navigateToLoginAfterDelay() {
-             // Add a delay before navigating to the login screen
-             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                 // Perform segue to the login view controller
-                 self.performSegue(withIdentifier: "splashToLogin", sender: self)
-             }
-         }
+    private func navigateToLoginAfterDelay() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + delayDuration) {
+            self.performSegue(withIdentifier: "splashToLogin", sender: self)
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "splashToLogin" {
+            activityIndicator?.stopAnimating()
+            view.isUserInteractionEnabled = true
+        } else {
+            print("Unexpected segue: \(String(describing: segue.identifier))")
+        }
+    }
+}
+
     
 
     /*

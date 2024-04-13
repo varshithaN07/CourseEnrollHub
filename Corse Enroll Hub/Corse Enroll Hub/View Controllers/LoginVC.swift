@@ -38,21 +38,31 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginletsgoBTN(_ sender: UIButton) {
-        guard let email = loginEmailTF.text else { return }
-        guard let password = loginpasswordTF.text else { return }
+        guard let email = loginEmailTF.text, !email.isEmpty else {
+            presentAlert(withTitle: "Error", message: "Please enter an email.")
+            return
+        }
+        
+        guard let password = loginpasswordTF.text, !password.isEmpty else {
+            presentAlert(withTitle: "Error", message: "Please enter a password.")
+            return
+        }
         
         Auth.auth().signIn(withEmail: email, password: password) { firebaseResult, error in
             if let e = error {
-                print("Error")
-                print("Invalid login details")
-            }
-            else{
+                self.presentAlert(withTitle: "Login Error", message: e.localizedDescription)
+            } else {
                 self.performSegue(withIdentifier: "goToNext", sender: self)
-                
             }
         }
-        
     }
+
+    private func presentAlert(withTitle title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+
     
     
     /*

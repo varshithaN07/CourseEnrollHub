@@ -9,8 +9,7 @@ import UIKit
 
 class ForgotPasswordViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var feedbackLabel: UILabel!
+   
     var passwordResetService: PasswordResetService?
     
     override func viewDidLoad() {
@@ -21,20 +20,7 @@ class ForgotPasswordViewController: UIViewController {
     @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true)
     }
-    
-    @IBAction func resetPassword(_ sender: Any) {
-        guard let email = emailTextField.text, !email.isEmpty else {
-            feedbackLabel.text = "Please enter your email address."
-            return
-        }
-        
-        guard isValidEmail(email) else {
-            feedbackLabel.text = "Please enter a valid email address."
-            return
-        }
-        
-        performPasswordReset(for: email)
-    }
+   
     
     func isValidEmail(_ email: String) -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\\.[A-Za-z]{2,}"
