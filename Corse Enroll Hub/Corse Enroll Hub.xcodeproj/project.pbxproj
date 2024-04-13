@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1731B5D52BCA2B030040A2A4 /* CourseDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */; };
+		1731B5D72BCA2F880040A2A4 /* CourseRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731B5D62BCA2F880040A2A4 /* CourseRegisterViewController.swift */; };
 		174256D82B8959D600441531 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 174256D72B8959D600441531 /* GoogleService-Info.plist */; };
 		17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17599BD42BB65C08007BC50E /* SplashViewController.swift */; };
 		17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */; };
@@ -50,7 +51,6 @@
 		7CB6FC3D2BC8291000A88D63 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7CB6FC3C2BC8291000A88D63 /* FirebaseRemoteConfigSwift */; };
 		7CB6FC3F2BC8291000A88D63 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7CB6FC3E2BC8291000A88D63 /* FirebaseStorage */; };
 		7CB6FC412BC8291000A88D63 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7CB6FC402BC8291000A88D63 /* FirebaseStorageCombine-Community */; };
-		7CB89DBE2BC5021F008AD9CE /* CourseRegister'ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB89DBD2BC5021F008AD9CE /* CourseRegister'ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailVC.swift; sourceTree = "<group>"; };
+		1731B5D62BCA2F880040A2A4 /* CourseRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRegisterViewController.swift; sourceTree = "<group>"; };
 		174256D72B8959D600441531 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17599BD42BB65C08007BC50E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		7C06BED02B891B5E00DF2A66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		7CB89DBD2BC5021F008AD9CE /* CourseRegister'ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseRegister'ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
+				1731B5D62BCA2F880040A2A4 /* CourseRegisterViewController.swift */,
 				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
 				1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */,
@@ -197,7 +198,6 @@
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
-				7CB89DBD2BC5021F008AD9CE /* CourseRegister'ViewController.swift */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
 				17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */,
 			);
@@ -389,9 +389,9 @@
 				17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */,
 				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
 				17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */,
-				7CB89DBE2BC5021F008AD9CE /* CourseRegister'ViewController.swift in Sources */,
 				7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */,
 				7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */,
+				1731B5D72BCA2F880040A2A4 /* CourseRegisterViewController.swift in Sources */,
 				17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */,
 				1731B5D52BCA2B030040A2A4 /* CourseDetailVC.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,

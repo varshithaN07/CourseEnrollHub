@@ -265,7 +265,7 @@
         <!--Course Register View Controller-->
         <scene sceneID="bdn-bT-ldB">
             <objects>
-                <viewController id="tXf-Kd-3vM" customClass="CourseRegister_ViewController" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tXf-Kd-3vM" customClass="CourseRegisterViewController" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nsX-zf-vZZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,6 +369,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RBN-hG-HWm"/>
+                    <connections>
+                        <outlet property="SectionLBL" destination="YhQ-YA-HN1" id="WXG-R9-eAc"/>
+                        <outlet property="SectionTimingsLBL" destination="RZS-3Z-HBl" id="bWg-Lp-Xjx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ8-0Q-Pn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
