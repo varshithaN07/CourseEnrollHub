@@ -29,9 +29,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create an Account"/>
-                                <connections>
-                                    <segue destination="NTt-L2-6vi" kind="show" id="O8D-pg-wBu"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clJ-6L-R2m">
                                 <rect key="frame" x="-9" y="536" width="393" height="34.333333333333336"/>
@@ -51,6 +48,9 @@
                         <color key="backgroundColor" red="0.50744218274281339" green="0.84898222472905194" blue="0.93796588303149853" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="9ed-fe-pQ7"/>
+                    <connections>
+                        <segue destination="NTt-L2-6vi" kind="show" id="n6M-CM-lRc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -524,7 +524,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="splashToLogin" id="Cta-Jv-4TY"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="splashToLogin" id="31R-Xk-XsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkF-jB-a3i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -534,13 +534,13 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="6gE-zV-dZ5"/>
-        <segue reference="wvV-Hp-22G"/>
+        <segue reference="bQ6-Wq-d6c"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="An interactive  92953b80-2d72-4d75-a3b0-e57b60c2a68d" width="1024" height="1024"/>
         <image name="logo" width="170" height="150"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
