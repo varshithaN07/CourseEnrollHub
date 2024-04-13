@@ -178,18 +178,23 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dCl-fs-Df4" userLabel="imageLBL">
                                                     <rect key="frame" x="10" y="10" width="373" height="131"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-e0-Qrf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="131"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" id="IZ0-pW-y0R"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1s-p4b">
-                                                            <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="131"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WV5-4N-UCP" userLabel="Added Cart Screeen">
+                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="131"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-e0-Qrf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="131"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" id="IZ0-pW-y0R"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-1s-p4b">
+                                                                    <rect key="frame" x="7" y="0.0" width="366" height="131"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -219,11 +224,43 @@
                     <connections>
                         <outlet property="table" destination="nX9-7r-3Hr" id="ugm-nS-zyV"/>
                         <segue destination="tXf-Kd-3vM" kind="show" id="2BM-29-l0S"/>
+                        <segue destination="R0m-UW-6gm" kind="show" identifier="AddCourses" id="hpA-jO-rx0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyN-nm-Ifi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3558" y="-114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Fj-ig-dDD">
+            <objects>
+                <viewController id="R0m-UW-6gm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ukt-16-Xbi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz5-4J-TbC">
+                                <rect key="frame" x="169" y="0.0" width="54" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-v2-Idv">
+                                <rect key="frame" x="181" y="111" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SAh-XX-XN3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gi8-Y7-aq9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqh-O5-J83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3603.8167938931297" y="652.81690140845069"/>
         </scene>
         <!--Course Register View Controller-->
         <scene sceneID="bdn-bT-ldB">
@@ -538,6 +575,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="An interactive  92953b80-2d72-4d75-a3b0-e57b60c2a68d" width="1024" height="1024"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="logo" width="170" height="150"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
