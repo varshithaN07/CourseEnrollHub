@@ -11,8 +11,6 @@
 		17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17599BD42BB65C08007BC50E /* SplashViewController.swift */; };
 		17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */; };
 		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
-		491E0DDC2BCA2650001715FB /* corsesectionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E0DDB2BCA2650001715FB /* corsesectionTVC.swift */; };
-		495C4C592BCA246200E42F9A /* corseselectionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C4C582BCA246200E42F9A /* corseselectionTVC.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
 		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
 		49A010B22B890BF600C7C581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B02B890BF600C7C581 /* Main.storyboard */; };
@@ -76,8 +74,6 @@
 		17599BD42BB65C08007BC50E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		491E0DDB2BCA2650001715FB /* corsesectionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = corsesectionTVC.swift; sourceTree = "<group>"; };
-		495C4C582BCA246200E42F9A /* corseselectionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = corseselectionTVC.swift; sourceTree = "<group>"; };
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A010AC2B890BF600C7C581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,9 +150,7 @@
 				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
 				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
-				491E0DDB2BCA2650001715FB /* corsesectionTVC.swift */,
 				17599BD42BB65C08007BC50E /* SplashViewController.swift */,
-				495C4C582BCA246200E42F9A /* corseselectionTVC.swift */,
 				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
 			);
 			path = "View Controllers";
@@ -397,8 +391,6 @@
 				7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */,
 				17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
-				495C4C592BCA246200E42F9A /* corseselectionTVC.swift in Sources */,
-				491E0DDC2BCA2650001715FB /* corsesectionTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
