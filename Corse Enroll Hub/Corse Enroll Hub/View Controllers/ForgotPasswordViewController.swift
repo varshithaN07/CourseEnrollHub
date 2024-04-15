@@ -6,42 +6,17 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ForgotPasswordViewController: UIViewController {
-
-   
-    var passwordResetService: PasswordResetService?
     
+    @IBOutlet weak var emailTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        feedbackLabel.text = ""
+        
+        // Do any additional setup after loading the view.
     }
     
-    @IBAction func cancel(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
-   
-    
-    func isValidEmail(_ email: String) -> Bool {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\\.[A-Za-z]{2,}"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-        return predicate.evaluate(with: email)
-    }
-    
-    func performPasswordReset(for email: String) {
-        passwordResetService?.resetPassword(for: email) { [weak self] success, error in
-            DispatchQueue.main.async {
-                if success {
-                    self?.feedbackLabel.text = "Password reset link has been sent to \(email)."
-                } else if let error = error {
-                    self?.feedbackLabel.text = "Failed to send password reset link: \(error.localizedDescription)."
-                } else {
-                    self?.feedbackLabel.text = "An unexpected error occurred. Please try again."
-                }
-            }
-        }
-    }
-}
 
     
     /*
@@ -53,5 +28,41 @@ class ForgotPasswordViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func send(_ sender: Any) {
+        
+        if emailTF.text == "" {
+            
+            self.showAlert(str: "enter email")
+        }else {
+            
+            SVProgressHUD.show()
+            AuthenticationManager.shared.resetPassword(email: emailTF.text!) { error, success in
+                
+                if !success {
+                    
+                    SVProgressHUD.dismiss()
+                    self.showAlert(str: error?.localizedDescription ?? "")
+                }else {
+                    
+                    SVProgressHUD.dismiss()
+                    let alert = UIAlertController(title: "", message: "Reset password link send to given email", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
+                        
+                        self.dismiss(animated: true)
+                    }))
+                    
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    
+    
+    @IBAction func cancel(_ sender: Any) {
+        
+        self.dismiss(animated: true)
+    }
+    
+}
 
 

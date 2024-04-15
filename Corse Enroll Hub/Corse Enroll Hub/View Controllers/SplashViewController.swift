@@ -6,36 +6,27 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SplashViewController: UIViewController {
-    private let delayDuration: TimeInterval = 3.0
-    private var activityIndicator: UIActivityIndicatorView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator = UIActivityIndicatorView(style: .large)
-        activityIndicator?.center = view.center
-        view.addSubview(activityIndicator!)
-        activityIndicator?.startAnimating()
-        view.isUserInteractionEnabled = false
-        navigateToLoginAfterDelay()
+        
+        perform(#selector(moveToView), with: nil, afterDelay: 3)
     }
-
-    private func navigateToLoginAfterDelay() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + delayDuration) {
+    
+    
+    @objc func moveToView() -> Void {
+        
+        if Auth.auth().currentUser == nil {
+            
             self.performSegue(withIdentifier: "splashToLogin", sender: self)
+        }else {
+            
+            self.performSegue(withIdentifier: "splashToTabbar", sender: self)
         }
     }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "splashToLogin" {
-            activityIndicator?.stopAnimating()
-            view.isUserInteractionEnabled = true
-        } else {
-            print("Unexpected segue: \(String(describing: segue.identifier))")
-        }
-    }
-}
 
     
 

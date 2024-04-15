@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1731B5D52BCA2B030040A2A4 /* CourseDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */; };
-		1731B5D72BCA2F880040A2A4 /* CourseRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731B5D62BCA2F880040A2A4 /* CourseRegisterViewController.swift */; };
 		174256D82B8959D600441531 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 174256D72B8959D600441531 /* GoogleService-Info.plist */; };
+		174F32F82BCD95EF0018CB54 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 174F32F72BCD95EF0018CB54 /* SVProgressHUD */; };
+		174F32FB2BCD96710018CB54 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F32F92BCD96690018CB54 /* AuthenticationModel.swift */; };
 		17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17599BD42BB65C08007BC50E /* SplashViewController.swift */; };
-		17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */; };
 		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
 		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
@@ -21,8 +20,8 @@
 		49A010C22B890BF700C7C581 /* Corse_Enroll_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010C12B890BF700C7C581 /* Corse_Enroll_HubTests.swift */; };
 		49A010CC2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010CB2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift */; };
 		49A010CE2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */; };
-		7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED02B891B5E00DF2A66 /* LoginVC.swift */; };
-		7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */; };
+		7C06BED12B891B5E00DF2A66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED02B891B5E00DF2A66 /* LoginViewController.swift */; };
+		7C06BED32B891DBC00DF2A66 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06BED22B891DBC00DF2A66 /* RegisterViewController.swift */; };
 		7C5FC3A72BB78A9200A53DF0 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */; };
 		7CB6FC0D2BC8291000A88D63 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7CB6FC0C2BC8291000A88D63 /* FirebaseAnalytics */; };
 		7CB6FC0F2BC8291000A88D63 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 7CB6FC0E2BC8291000A88D63 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -71,11 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailVC.swift; sourceTree = "<group>"; };
-		1731B5D62BCA2F880040A2A4 /* CourseRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRegisterViewController.swift; sourceTree = "<group>"; };
 		174256D72B8959D600441531 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		174F32F92BCD96690018CB54 /* AuthenticationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		17599BD42BB65C08007BC50E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,8 +86,8 @@
 		49A010C72B890BF700C7C581 /* Corse Enroll HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corse Enroll HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010CB2B890BF700C7C581 /* Corse_Enroll_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubUITests.swift; sourceTree = "<group>"; };
 		49A010CD2B890BF700C7C581 /* Corse_Enroll_HubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corse_Enroll_HubUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7C06BED02B891B5E00DF2A66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		7C06BED02B891B5E00DF2A66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C06BED22B891DBC00DF2A66 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +120,7 @@
 				7CB6FC312BC8291000A88D63 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				7CB6FC3F2BC8291000A88D63 /* FirebaseStorage in Frameworks */,
 				7CB6FC232BC8291000A88D63 /* FirebaseDynamicLinks in Frameworks */,
+				174F32F82BCD95EF0018CB54 /* SVProgressHUD in Frameworks */,
 				7CB6FC272BC8291000A88D63 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				7CB6FC372BC8291000A88D63 /* FirebaseMessaging in Frameworks */,
 				7CB6FC332BC8291000A88D63 /* FirebaseInstallations in Frameworks */,
@@ -149,13 +147,10 @@
 		491910D32BB3CD4500EC0101 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				17F8DE0A2B9ACBB90091A61D /* DashboardVC.swift */,
-				1731B5D62BCA2F880040A2A4 /* CourseRegisterViewController.swift */,
 				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
-				7C06BED02B891B5E00DF2A66 /* LoginVC.swift */,
-				1731B5D42BCA2B030040A2A4 /* CourseDetailVC.swift */,
+				7C06BED02B891B5E00DF2A66 /* LoginViewController.swift */,
 				17599BD42BB65C08007BC50E /* SplashViewController.swift */,
-				7C06BED22B891DBC00DF2A66 /* CreateAccountVC.swift */,
+				7C06BED22B891DBC00DF2A66 /* RegisterViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -197,6 +192,7 @@
 				491910D32BB3CD4500EC0101 /* View Controllers */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
+				174F32F92BCD96690018CB54 /* AuthenticationModel.swift */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
 				17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */,
@@ -265,6 +261,7 @@
 				7CB6FC3C2BC8291000A88D63 /* FirebaseRemoteConfigSwift */,
 				7CB6FC3E2BC8291000A88D63 /* FirebaseStorage */,
 				7CB6FC402BC8291000A88D63 /* FirebaseStorageCombine-Community */,
+				174F32F72BCD95EF0018CB54 /* SVProgressHUD */,
 			);
 			productName = "Corse Enroll Hub";
 			productReference = 49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */;
@@ -340,6 +337,7 @@
 			mainGroup = 49A0109E2B890BF600C7C581;
 			packageReferences = (
 				7CB6FC0B2BC8291000A88D63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				174F32F62BCD95EF0018CB54 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
 			);
 			productRefGroup = 49A010A82B890BF600C7C581 /* Products */;
 			projectDirPath = "";
@@ -386,14 +384,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5FC3A72BB78A9200A53DF0 /* ForgotPasswordViewController.swift in Sources */,
-				17F8DE0B2B9ACBB90091A61D /* DashboardVC.swift in Sources */,
 				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
 				17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */,
-				7C06BED12B891B5E00DF2A66 /* LoginVC.swift in Sources */,
-				7C06BED32B891DBC00DF2A66 /* CreateAccountVC.swift in Sources */,
-				1731B5D72BCA2F880040A2A4 /* CourseRegisterViewController.swift in Sources */,
+				7C06BED12B891B5E00DF2A66 /* LoginViewController.swift in Sources */,
+				7C06BED32B891DBC00DF2A66 /* RegisterViewController.swift in Sources */,
+				174F32FB2BCD96710018CB54 /* AuthenticationModel.swift in Sources */,
 				17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */,
-				1731B5D52BCA2B030040A2A4 /* CourseDetailVC.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,6 +741,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		174F32F62BCD95EF0018CB54 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
 		7CB6FC0B2BC8291000A88D63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -756,6 +760,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		174F32F72BCD95EF0018CB54 /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 174F32F62BCD95EF0018CB54 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
+		};
 		7CB6FC0C2BC8291000A88D63 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7CB6FC0B2BC8291000A88D63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
