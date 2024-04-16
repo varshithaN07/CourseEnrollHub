@@ -10,7 +10,11 @@
 		174256D82B8959D600441531 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 174256D72B8959D600441531 /* GoogleService-Info.plist */; };
 		174F32F82BCD95EF0018CB54 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 174F32F72BCD95EF0018CB54 /* SVProgressHUD */; };
 		174F32FB2BCD96710018CB54 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F32F92BCD96690018CB54 /* AuthenticationModel.swift */; };
+		174F32FD2BCD9FE30018CB54 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F32FC2BCD9FE30018CB54 /* CoursesViewController.swift */; };
+		174F32FF2BCDA1080018CB54 /* CourseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F32FE2BCDA1080018CB54 /* CourseTVC.swift */; };
 		17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17599BD42BB65C08007BC50E /* SplashViewController.swift */; };
+		17701C472BCDA7200070509C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17701C462BCDA7200070509C /* ProfileViewController.swift */; };
+		17A59F7C2BCDB3B800A0B808 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */; };
 		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
 		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
@@ -72,7 +76,11 @@
 /* Begin PBXFileReference section */
 		174256D72B8959D600441531 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		174F32F92BCD96690018CB54 /* AuthenticationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		174F32FC2BCD9FE30018CB54 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoursesViewController.swift; path = "Corse Enroll Hub/Supporting Files/CoursesViewController.swift"; sourceTree = SOURCE_ROOT; };
+		174F32FE2BCDA1080018CB54 /* CourseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CourseTVC.swift; path = "View Controllers/CourseTVC.swift"; sourceTree = "<group>"; };
 		17599BD42BB65C08007BC50E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		17701C462BCDA7200070509C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 		17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +155,9 @@
 		491910D32BB3CD4500EC0101 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				174F32FC2BCD9FE30018CB54 /* CoursesViewController.swift */,
+				17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */,
+				17701C462BCDA7200070509C /* ProfileViewController.swift */,
 				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginViewController.swift */,
 				17599BD42BB65C08007BC50E /* SplashViewController.swift */,
@@ -187,6 +198,7 @@
 		49A010A92B890BF600C7C581 /* Corse Enroll Hub */ = {
 			isa = PBXGroup;
 			children = (
+				174F32FE2BCDA1080018CB54 /* CourseTVC.swift */,
 				491910D42BB3CD7200EC0101 /* Supporting Files */,
 				49A010B02B890BF600C7C581 /* Main.storyboard */,
 				491910D32BB3CD4500EC0101 /* View Controllers */,
@@ -384,13 +396,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5FC3A72BB78A9200A53DF0 /* ForgotPasswordViewController.swift in Sources */,
+				17A59F7C2BCDB3B800A0B808 /* AddCourseViewController.swift in Sources */,
 				49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */,
 				17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */,
 				7C06BED12B891B5E00DF2A66 /* LoginViewController.swift in Sources */,
 				7C06BED32B891DBC00DF2A66 /* RegisterViewController.swift in Sources */,
 				174F32FB2BCD96710018CB54 /* AuthenticationModel.swift in Sources */,
+				17701C472BCDA7200070509C /* ProfileViewController.swift in Sources */,
 				17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
+				174F32FF2BCDA1080018CB54 /* CourseTVC.swift in Sources */,
+				174F32FD2BCD9FE30018CB54 /* CoursesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
