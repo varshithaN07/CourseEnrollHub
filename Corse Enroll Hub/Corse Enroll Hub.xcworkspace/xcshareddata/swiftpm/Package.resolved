@@ -1,5 +1,5 @@
 {
-  "originHash" : "6165d4be6ec9e951029fc6bc6e7e19e95ec05646ac28d757bf8d605c10d8e7b7",
+  "originHash" : "5b42a6cfe6d87ee0a0d940d7bb73c103c171f8da2e72c3c49cffc4984d6e7315",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -110,12 +110,12 @@
       }
     },
     {
-      "identity" : "svprogresshud",
+      "identity" : "sdwebimage",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SVProgressHUD/SVProgressHUD.git",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
       "state" : {
-        "revision" : "c33f7c775ba7feea6047a1fc3257f2e5863b44f7",
-        "version" : "2.3.1"
+        "revision" : "f6afa0132961d593f07970d84e2d8b588c29ea04",
+        "version" : "5.19.1"
       }
     },
     {
