@@ -16,6 +16,7 @@
 		17701C472BCDA7200070509C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17701C462BCDA7200070509C /* ProfileViewController.swift */; };
 		17A59F7C2BCDB3B800A0B808 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */; };
 		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
+		491E0DE12BCF2539001715FB /* CalenderEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E0DE02BCF2539001715FB /* CalenderEventVC.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
 		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
 		49A010B22B890BF600C7C581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A010B02B890BF600C7C581 /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 		17701C462BCDA7200070509C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 		17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		491E0DE02BCF2539001715FB /* CalenderEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderEventVC.swift; sourceTree = "<group>"; };
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A010AC2B890BF600C7C581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				174F32FC2BCD9FE30018CB54 /* CoursesViewController.swift */,
 				17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */,
+				491E0DE02BCF2539001715FB /* CalenderEventVC.swift */,
 				17701C462BCDA7200070509C /* ProfileViewController.swift */,
 				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginViewController.swift */,
@@ -173,6 +176,15 @@
 				49A010AC2B890BF600C7C581 /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		491E0DDF2BCF1810001715FB /* Custom Files */ = {
+			isa = PBXGroup;
+			children = (
+				17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */,
+				174F32F92BCD96690018CB54 /* AuthenticationModel.swift */,
+			);
+			path = "Custom Files";
 			sourceTree = "<group>";
 		};
 		49A0109E2B890BF600C7C581 = {
@@ -200,14 +212,13 @@
 			children = (
 				174F32FE2BCDA1080018CB54 /* CourseTVC.swift */,
 				491910D42BB3CD7200EC0101 /* Supporting Files */,
-				49A010B02B890BF600C7C581 /* Main.storyboard */,
 				491910D32BB3CD4500EC0101 /* View Controllers */,
+				491E0DDF2BCF1810001715FB /* Custom Files */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
+				49A010B02B890BF600C7C581 /* Main.storyboard */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
-				174F32F92BCD96690018CB54 /* AuthenticationModel.swift */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
-				17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */,
 			);
 			path = "Corse Enroll Hub";
 			sourceTree = "<group>";
@@ -402,6 +413,7 @@
 				7C06BED12B891B5E00DF2A66 /* LoginViewController.swift in Sources */,
 				7C06BED32B891DBC00DF2A66 /* RegisterViewController.swift in Sources */,
 				174F32FB2BCD96710018CB54 /* AuthenticationModel.swift in Sources */,
+				491E0DE12BCF2539001715FB /* CalenderEventVC.swift in Sources */,
 				17701C472BCDA7200070509C /* ProfileViewController.swift in Sources */,
 				17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */,
 				49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */,
