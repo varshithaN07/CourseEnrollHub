@@ -41,7 +41,7 @@ class AddCourseViewController: UIViewController {
     @IBOutlet weak var courseBTN: UIButton!
     @IBOutlet weak var professorBtn: UIButton!
     @IBOutlet weak var sectionBtn: UIButton!
-    @IBOutlet weak var timeTF: UITextField!
+   
     
     @IBOutlet weak var saveBtn: UIButton!
     
@@ -61,7 +61,7 @@ class AddCourseViewController: UIViewController {
         
         professorBtn.isHidden = true
         sectionBtn.isHidden = true
-        timeTF.isHidden = true
+//        timeTF.isHidden = true
         saveBtn.isHidden = true
         
         // Do any additional setup after loading the view.

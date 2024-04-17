@@ -16,11 +16,11 @@
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="overFullScreen" id="u6J-7R-GMj" customClass="LoginViewController" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fl5-rt-feT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="otZ-Wn-rYJ">
-                                <rect key="frame" x="20" y="20" width="353" height="518.33333333333337"/>
+                                <rect key="frame" x="20" y="128" width="353" height="518.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1b-T8-ugY">
                                         <rect key="frame" x="151.66666666666666" y="0.0" width="50" height="100"/>
@@ -89,7 +89,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlo-gs-Prn">
-                                <rect key="frame" x="139.66666666666666" y="806" width="114" height="30"/>
+                                <rect key="frame" x="139.66666666666666" y="757" width="114" height="30"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Create Account?"/>
@@ -168,11 +168,11 @@
             <objects>
                 <viewController storyboardIdentifier="RegisterViewController" modalPresentationStyle="overFullScreen" id="2x5-Rf-xj3" customClass="RegisterViewController" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gpy-fK-NdQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ghx-Hx-32X">
-                                <rect key="frame" x="20" y="20" width="353" height="600.33333333333337"/>
+                                <rect key="frame" x="20" y="128" width="353" height="600.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYp-MD-iak">
                                         <rect key="frame" x="151.66666666666666" y="0.0" width="50" height="100"/>
@@ -296,11 +296,11 @@
             <objects>
                 <viewController modalPresentationStyle="overFullScreen" id="gJd-SR-sg9" customClass="ForgotPasswordViewController" customModule="Corse_Enroll_Hub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZtA-BJ-UQq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-Pd-z5E">
-                                <rect key="frame" x="20" y="20" width="353" height="420.33333333333337"/>
+                                <rect key="frame" x="20" y="127.99999999999997" width="353" height="420.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twS-pI-7NL">
                                         <rect key="frame" x="151.66666666666666" y="0.0" width="50" height="100"/>
@@ -942,7 +942,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vFO-5W-voo"/>
+        <segue reference="RoW-lQ-5gR"/>
         <segue reference="9BI-46-f3r"/>
     </inferredMetricsTieBreakers>
     <resources>
