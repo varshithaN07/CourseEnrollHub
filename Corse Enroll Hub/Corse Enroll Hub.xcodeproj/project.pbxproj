@@ -14,6 +14,8 @@
 		17599BD52BB65C08007BC50E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17599BD42BB65C08007BC50E /* SplashViewController.swift */; };
 		17701C472BCDA7200070509C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17701C462BCDA7200070509C /* ProfileViewController.swift */; };
 		17A59F7C2BCDB3B800A0B808 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */; };
+		17B004512BD0D6B00099EF9E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 17B004502BD0D6B00099EF9E /* Lottie */; };
+		17C0C65E2BD323EE00F19F3F /* Ring (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17C0C65D2BD323ED00F19F3F /* Ring (1).mp3 */; };
 		17DDB58F2BD0037900781A09 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17DDB58E2BD0037900781A09 /* FirebaseAnalytics */; };
 		17DDB5912BD0037900781A09 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 17DDB5902BD0037900781A09 /* FirebaseAnalyticsOnDeviceConversion */; };
 		17DDB5932BD0037900781A09 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17DDB5922BD0037900781A09 /* FirebaseAnalyticsSwift */; };
@@ -42,6 +44,8 @@
 		17DDB5C12BD0037900781A09 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17DDB5C02BD0037900781A09 /* FirebaseStorage */; };
 		17DDB5C32BD0037900781A09 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 17DDB5C22BD0037900781A09 /* FirebaseStorageCombine-Community */; };
 		17DDB5C62BD0039600781A09 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 17DDB5C52BD0039600781A09 /* SVProgressHUD */; };
+		17F0DB622BD315F7007FB018 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 17F0DB612BD315F7007FB018 /* AnimatedGradientView */; };
+		17F0DB662BD316A3007FB018 /* ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17F0DB652BD316A3007FB018 /* ring.mp3 */; };
 		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
 		49A010AD2B890BF600C7C581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AC2B890BF600C7C581 /* SceneDelegate.swift */; };
@@ -82,6 +86,8 @@
 		17599BD42BB65C08007BC50E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		17701C462BCDA7200070509C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		17C0C65D2BD323ED00F19F3F /* Ring (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ring (1).mp3"; sourceTree = "<group>"; };
+		17F0DB652BD316A3007FB018 /* ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ring.mp3; sourceTree = "<group>"; };
 		17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A010AA2B890BF600C7C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 				17DDB5B72BD0037900781A09 /* FirebaseMLModelDownloader in Frameworks */,
 				17DDB5AB2BD0037900781A09 /* FirebaseFirestoreSwift in Frameworks */,
 				17DDB5972BD0037900781A09 /* FirebaseAppCheck in Frameworks */,
+				17B004512BD0D6B00099EF9E /* Lottie in Frameworks */,
 				17DDB5952BD0037900781A09 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				17DDB59B2BD0037900781A09 /* FirebaseAuth in Frameworks */,
 				17DDB59F2BD0037900781A09 /* FirebaseCrashlytics in Frameworks */,
@@ -125,6 +132,7 @@
 				17DDB5C32BD0037900781A09 /* FirebaseStorageCombine-Community in Frameworks */,
 				17DDB5BD2BD0037900781A09 /* FirebaseRemoteConfig in Frameworks */,
 				17DDB5992BD0037900781A09 /* FirebaseAppDistribution-Beta in Frameworks */,
+				17F0DB622BD315F7007FB018 /* AnimatedGradientView in Frameworks */,
 				17DDB59D2BD0037900781A09 /* FirebaseAuthCombine-Community in Frameworks */,
 				17DDB5BB2BD0037900781A09 /* FirebasePerformance in Frameworks */,
 				17DDB5B32BD0037900781A09 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
@@ -215,9 +223,11 @@
 				491910D32BB3CD4500EC0101 /* View Controllers */,
 				491E0DDF2BCF1810001715FB /* Custom Files */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
+				17F0DB652BD316A3007FB018 /* ring.mp3 */,
 				49A010B02B890BF600C7C581 /* Main.storyboard */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
+				17C0C65D2BD323ED00F19F3F /* Ring (1).mp3 */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
 			);
 			path = "Corse Enroll Hub";
@@ -285,6 +295,8 @@
 				17DDB5C02BD0037900781A09 /* FirebaseStorage */,
 				17DDB5C22BD0037900781A09 /* FirebaseStorageCombine-Community */,
 				17DDB5C52BD0039600781A09 /* SVProgressHUD */,
+				17B004502BD0D6B00099EF9E /* Lottie */,
+				17F0DB612BD315F7007FB018 /* AnimatedGradientView */,
 			);
 			productName = "Corse Enroll Hub";
 			productReference = 49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */;
@@ -361,6 +373,8 @@
 			packageReferences = (
 				17DDB58D2BD0037900781A09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				17DDB5C42BD0039600781A09 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
+				17B0044F2BD0D6B00099EF9E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				17F0DB602BD315F7007FB018 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 			);
 			productRefGroup = 49A010A82B890BF600C7C581 /* Products */;
 			projectDirPath = "";
@@ -378,7 +392,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C0C65E2BD323EE00F19F3F /* Ring (1).mp3 in Resources */,
 				49A010B72B890BF700C7C581 /* LaunchScreen.storyboard in Resources */,
+				17F0DB662BD316A3007FB018 /* ring.mp3 in Resources */,
 				174256D82B8959D600441531 /* GoogleService-Info.plist in Resources */,
 				49A010B42B890BF700C7C581 /* Assets.xcassets in Resources */,
 				49A010B22B890BF600C7C581 /* Main.storyboard in Resources */,
@@ -769,6 +785,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		17B0044F2BD0D6B00099EF9E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
 		17DDB58D2BD0037900781A09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -785,9 +809,22 @@
 				minimumVersion = 2.3.1;
 			};
 		};
+		17F0DB602BD315F7007FB018 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		17B004502BD0D6B00099EF9E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17B0044F2BD0D6B00099EF9E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		17DDB58E2BD0037900781A09 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 17DDB58D2BD0037900781A09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -927,6 +964,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 17DDB5C42BD0039600781A09 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
 			productName = SVProgressHUD;
+		};
+		17F0DB612BD315F7007FB018 /* AnimatedGradientView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F0DB602BD315F7007FB018 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
+			productName = AnimatedGradientView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

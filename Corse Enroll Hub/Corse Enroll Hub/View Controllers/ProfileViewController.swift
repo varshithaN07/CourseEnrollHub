@@ -6,7 +6,7 @@
 //
 import UIKit
 import FirebaseAuth
-
+import AudioToolbox
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var emailLBL: UILabel!
@@ -21,6 +21,7 @@ class ProfileViewController: UIViewController {
         emailLBL.text = user?.email ?? ""
     }
     @IBAction func logout(_ sender: Any) {
+        AudioServicesPlaySystemSound(1103)
         do {
             
             try Auth.auth().signOut()

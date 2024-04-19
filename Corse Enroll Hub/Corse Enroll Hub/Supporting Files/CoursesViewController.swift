@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 import SVProgressHUD
+import AudioToolbox
 struct MyCourseModel: Codable {
     
     var id: String?
@@ -154,7 +155,7 @@ extension CoursesViewController: UITableViewDelegate, UITableViewDataSource {
     // Override to support editing the table view.
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            
+            AudioServicesPlaySystemSound(SystemSoundID(1013))
             let course = courses[indexPath.row]
             courses.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)

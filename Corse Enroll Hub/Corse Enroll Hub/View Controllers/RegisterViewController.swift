@@ -7,7 +7,7 @@
 
 import UIKit
 import SVProgressHUD
-
+import AudioToolbox
 class RegisterViewController: UIViewController {
     
     
@@ -28,7 +28,7 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func register(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1102)
         if nameTF.text == "" {
             
             self.showAlert(str: "enter name")
@@ -69,7 +69,7 @@ class RegisterViewController: UIViewController {
     
 
     @IBAction func cancel(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1101)
         self.dismiss(animated: true)
         
     }

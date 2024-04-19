@@ -8,7 +8,7 @@
 import UIKit
 import EventKit
 import EventKitUI
-
+import AudioToolbox
 class AddEventViewController: UIViewController {
     let eventStore = EKEventStore()
     @IBOutlet weak var endDateBtn: UIButton!
@@ -36,7 +36,7 @@ class AddEventViewController: UIViewController {
     
     
     @IBAction func start(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1104)
         field = "start"
         pickerView.isHidden = false
         
@@ -55,7 +55,7 @@ class AddEventViewController: UIViewController {
     
     
     @IBAction func end(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1102)
         field = "end"
         pickerView.isHidden = false
         
@@ -70,7 +70,7 @@ class AddEventViewController: UIViewController {
     
     
     @IBAction func done(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1105)
         let date = dtPicker.date
         
         if field == "start" {
@@ -93,7 +93,7 @@ class AddEventViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1101)
         pickerView.isHidden = true
     }
     
@@ -156,7 +156,7 @@ class AddEventViewController: UIViewController {
             eventVC.event = event
             event.alarms = [] 
             self.present(eventVC, animated: true)
-            event
+            
             
         }
     }

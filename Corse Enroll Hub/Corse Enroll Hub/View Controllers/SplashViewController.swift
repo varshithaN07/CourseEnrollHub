@@ -7,13 +7,32 @@
 
 import UIKit
 import FirebaseAuth
-
+import Lottie
 class SplashViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var launchLAV: LottieAnimationView!{
+        didSet {
+            launchLAV.animation = .named("looo")
+            launchLAV.alpha = 1
+            
+            launchLAV.play { [weak self] _ in
+                UIViewPropertyAnimator.runningPropertyAnimator(
+                    withDuration: 1,
+                    delay: 0.0,
+                    options: [.curveEaseInOut]
+                ) {
+                    self?.launchLAV.alpha = 0.0
+                }
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        perform(#selector(moveToView), with: nil, afterDelay: 3)
+        perform(#selector(moveToView), with: nil, afterDelay: 10
+        )
     }
     
     
@@ -27,9 +46,6 @@ class SplashViewController: UIViewController {
             self.performSegue(withIdentifier: "splashToTabbar", sender: self)
         }
     }
-
-    
-
     /*
     // MARK: - Navigation
 

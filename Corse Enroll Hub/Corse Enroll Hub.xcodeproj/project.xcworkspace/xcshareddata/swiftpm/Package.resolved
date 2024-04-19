@@ -1,5 +1,5 @@
 {
-  "originHash" : "6165d4be6ec9e951029fc6bc6e7e19e95ec05646ac28d757bf8d605c10d8e7b7",
+  "originHash" : "59f7a209e487a5d7e059453c1246818654c6df9d54b6c3f9d2fc37ddd2615ab2",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "748c7837511d0e6a507737353af268484e1745e2",
         "version" : "1.2024011601.1"
+      }
+    },
+    {
+      "identity" : "animatedgradientview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rwbutler/AnimatedGradientView.git",
+      "state" : {
+        "revision" : "c82c3c0e311a7164f0bee4bd52ca525c5b6da4f6",
+        "version" : "3.1.1"
       }
     },
     {
@@ -89,6 +98,15 @@
       "state" : {
         "revision" : "9d108e9112aa1d65ce508facf804674546116d9c",
         "version" : "1.22.3"
+      }
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "revision" : "769b88d83a42ca8d5572b020c96f47e3690b3796",
+        "version" : "4.4.3"
       }
     },
     {

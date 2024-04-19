@@ -7,7 +7,7 @@
 
 import UIKit
 import SVProgressHUD
-
+import AudioToolbox
 class ForgotPasswordViewController: UIViewController {
     
     @IBOutlet weak var emailTF: UITextField!
@@ -29,7 +29,7 @@ class ForgotPasswordViewController: UIViewController {
     }
     */
     @IBAction func send(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1105)
         if emailTF.text == "" {
             
             self.showAlert(str: "enter email")
@@ -59,7 +59,7 @@ class ForgotPasswordViewController: UIViewController {
     
     
     @IBAction func cancel(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(1104)
         self.dismiss(animated: true)
     }
     

@@ -9,7 +9,10 @@ import UIKit
 import FirebaseFirestore
 import FirebaseAuth
 import SVProgressHUD
-
+import AudioToolbox
+import AVKit
+import AVFoundation
+import Lottie
 struct CourseModel: Codable {
     
     var name: String?
@@ -37,7 +40,9 @@ struct SectionModel: Codable {
 
 class AddCourseViewController: UIViewController {
     
-    
+    var audioPlayer: AVAudioPlayer?
+    var timer: Timer?
+   // @IBOutlet weak var LaunchLAV: LottieAnimationView!
     @IBOutlet weak var courseBTN: UIButton!
     @IBOutlet weak var professorBtn: UIButton!
     @IBOutlet weak var sectionBtn: UIButton!
@@ -55,7 +60,23 @@ class AddCourseViewController: UIViewController {
     var selectedSection: SectionModel?
     
     override func viewDidLoad() {
-    
+        let session = AVAudioSession.sharedInstance()
+                do {
+                    try session.setCategory(.playback, mode: .default)
+                } catch {
+                    print("Error setting up audio session: \(error.localizedDescription)")
+                }
+                
+                // Load audio file
+                if let path = Bundle.main.path(forResource: "Ring (1)", ofType: "mp3") {
+                    let url = URL(fileURLWithPath: path)
+                    do {
+                        audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        audioPlayer?.prepareToPlay()
+                    } catch {
+                        print("Error loading audio file: \(error.localizedDescription)")
+                    }
+                }
        super.viewDidLoad()
         super.viewDidLoad()
         
@@ -299,6 +320,14 @@ class AddCourseViewController: UIViewController {
      */
     
     @IBAction func save(_ sender: Any) {
+//        LaunchLAV.animation = .named("LottieProject")
+//        LaunchLAV.loopMode = .playOnce
+//        LaunchLAV.play()
+        audioPlayer?.play()
+                 // Schedule a timer to stop audio playback after 10 seconds
+         timer = Timer.scheduledTimer(withTimeInterval: TimeInterval.random(in: 3.0...5.0), repeats: false) { [weak self] _ in
+             self?.audioPlayer?.stop()
+         }
         
         self.saveCourse()
     }
@@ -333,7 +362,7 @@ class AddCourseViewController: UIViewController {
                 let alert = UIAlertController(title: "", message: "Course added successfully", preferredStyle: UIAlertController.Style.alert)
                 
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
-                    
+                    AudioServicesPlaySystemSound(SystemSoundID(1004))
                     self.navigationController?.popViewController(animated: true)
                     
                 }))
