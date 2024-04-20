@@ -82,7 +82,7 @@
 		174256D72B8959D600441531 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		174F32F92BCD96690018CB54 /* AuthenticationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		174F32FC2BCD9FE30018CB54 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoursesViewController.swift; path = "Corse Enroll Hub/Supporting Files/CoursesViewController.swift"; sourceTree = SOURCE_ROOT; };
-		174F32FE2BCDA1080018CB54 /* CourseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CourseTVC.swift; path = "View Controllers/CourseTVC.swift"; sourceTree = "<group>"; };
+		174F32FE2BCDA1080018CB54 /* CourseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTVC.swift; sourceTree = "<group>"; };
 		17599BD42BB65C08007BC50E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		17701C462BCDA7200070509C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +168,7 @@
 				174F32FC2BCD9FE30018CB54 /* CoursesViewController.swift */,
 				17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */,
 				17701C462BCDA7200070509C /* ProfileViewController.swift */,
+				174F32FE2BCDA1080018CB54 /* CourseTVC.swift */,
 				7C0A8B6F2BCFA74600AC9A88 /* AddEventViewController.swift */,
 				7C5FC3A62BB78A9200A53DF0 /* ForgotPasswordViewController.swift */,
 				7C06BED02B891B5E00DF2A66 /* LoginViewController.swift */,
@@ -218,7 +219,6 @@
 		49A010A92B890BF600C7C581 /* Corse Enroll Hub */ = {
 			isa = PBXGroup;
 			children = (
-				174F32FE2BCDA1080018CB54 /* CourseTVC.swift */,
 				491910D42BB3CD7200EC0101 /* Supporting Files */,
 				491910D32BB3CD4500EC0101 /* View Controllers */,
 				491E0DDF2BCF1810001715FB /* Custom Files */,
@@ -624,7 +624,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -653,7 +653,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

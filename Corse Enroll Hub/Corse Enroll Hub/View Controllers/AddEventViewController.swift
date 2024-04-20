@@ -8,15 +8,25 @@
 import UIKit
 import EventKit
 import EventKitUI
-import AudioToolbox
-class AddEventViewController: UIViewController {
+
+class AddEventViewController: UIViewController, UINavigationControllerDelegate {
+
+    
     let eventStore = EKEventStore()
+    
+    @IBOutlet weak var titleTF: UITextField!
+    
+    
+    @IBOutlet weak var startDateBtn: UIButton!
+    
     @IBOutlet weak var endDateBtn: UIButton!
     
-    @IBOutlet weak var dtPicker: UIDatePicker!
+    
     @IBOutlet weak var pickerView: UIView!
-    @IBOutlet weak var startDateBtn: UIButton!
-    @IBOutlet weak var titleTF: UITextField!
+    
+    @IBOutlet weak var dtPicker: UIDatePicker!
+    
+    
     var field = ""
     var dtFomatter = DateFormatter()
     
@@ -36,7 +46,7 @@ class AddEventViewController: UIViewController {
     
     
     @IBAction func start(_ sender: Any) {
-        AudioServicesPlaySystemSound(1104)
+        
         field = "start"
         pickerView.isHidden = false
         
@@ -55,7 +65,7 @@ class AddEventViewController: UIViewController {
     
     
     @IBAction func end(_ sender: Any) {
-        AudioServicesPlaySystemSound(1102)
+        
         field = "end"
         pickerView.isHidden = false
         
@@ -70,7 +80,7 @@ class AddEventViewController: UIViewController {
     
     
     @IBAction func done(_ sender: Any) {
-        AudioServicesPlaySystemSound(1105)
+        
         let date = dtPicker.date
         
         if field == "start" {
@@ -93,7 +103,7 @@ class AddEventViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
-        AudioServicesPlaySystemSound(1101)
+        
         pickerView.isHidden = true
     }
     
@@ -107,6 +117,7 @@ class AddEventViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
     @IBAction func add(_ sender: Any) {
         
         if titleTF.text == "" {
@@ -116,6 +127,8 @@ class AddEventViewController: UIViewController {
             
             self.showAlert(str: "Please select start dte")
         }else {
+            
+            
             
             
             switch EKEventStore.authorizationStatus(for: .event) {
@@ -141,27 +154,35 @@ class AddEventViewController: UIViewController {
         
         
         func presentEventVC() -> Void {
-            let eventVC = EKEventEditViewController()
-            eventVC.editViewDelegate = self
-            eventVC.eventStore = EKEventStore()
             
-            
-            let event = EKEvent(eventStore: eventVC.eventStore)
-            event.title = titleTF.text ?? "Demo Event"
-            event.startDate = startDate ?? Date()
-            if endDate != nil {
+            DispatchQueue.main.async {
+                let eventVC = EKEventEditViewController()
+                eventVC.editViewDelegate = self
+                eventVC.delegate = self
+                eventVC.eventStore = EKEventStore()
                 
-                event.endDate = endDate!
+                
+                let event = EKEvent(eventStore: eventVC.eventStore)
+                event.title = self.titleTF.text ?? "Demo Event"
+                event.startDate = self.startDate ?? Date()
+                if self.endDate != nil {
+                    
+                    event.endDate = self.endDate!
+                }
+                eventVC.event = event
+                self.present(eventVC, animated: true)
             }
-            eventVC.event = event
-            event.alarms = [] 
-            self.present(eventVC, animated: true)
-            
-            
         }
     }
     
-    
+    func reset() -> Void {
+        
+        titleTF.text = ""
+        startDate = nil
+        startDateBtn.setTitle("Select start date", for: .normal)
+        endDate = nil
+        endDateBtn.setTitle("Select end date", for: .normal)
+    }
     
 }
 
@@ -171,9 +192,23 @@ extension AddEventViewController: EKEventEditViewDelegate {
         
         
         controller.dismiss(animated: true)
+        
+        switch action {
+            case .saved:
+                
+            let alert = UIAlertController(title: "", message: "Added successfully", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
+                
+                self.reset()
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            default:
+                break
+            }
     }
     
-
-
-
+    
+    
 }
