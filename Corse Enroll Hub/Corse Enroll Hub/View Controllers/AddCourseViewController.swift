@@ -328,7 +328,7 @@ class AddCourseViewController: UIViewController {
          timer = Timer.scheduledTimer(withTimeInterval: TimeInterval.random(in: 3.0...5.0), repeats: false) { [weak self] _ in
              self?.audioPlayer?.stop()
          }
-        
+       // AudioServicesPlaySystemSound(SystemSoundID(1104))
         self.saveCourse()
     }
     
@@ -362,7 +362,7 @@ class AddCourseViewController: UIViewController {
                 let alert = UIAlertController(title: "", message: "Course added successfully", preferredStyle: UIAlertController.Style.alert)
                 
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { action in
-                    AudioServicesPlaySystemSound(SystemSoundID(1004))
+                    AudioServicesPlaySystemSound(SystemSoundID(1104))
                     self.navigationController?.popViewController(animated: true)
                     
                 }))

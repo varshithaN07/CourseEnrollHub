@@ -47,7 +47,7 @@ class ForgotPasswordViewController: UIViewController {
                     SVProgressHUD.dismiss()
                     let alert = UIAlertController(title: "", message: "Reset password link send to given email", preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
-                        
+                        AudioServicesPlaySystemSound(SystemSoundID(1105))
                         self.dismiss(animated: true)
                     }))
                     

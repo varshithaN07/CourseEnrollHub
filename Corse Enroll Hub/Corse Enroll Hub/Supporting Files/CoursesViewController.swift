@@ -112,7 +112,7 @@ class CoursesViewController: UIViewController {
                 
                 SVProgressHUD.dismiss()
             } else {
-                
+                AudioServicesPlaySystemSound(SystemSoundID(1100))
                 SVProgressHUD.dismiss()
                 self.getMyCourses()
             }

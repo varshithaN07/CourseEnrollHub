@@ -28,7 +28,7 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func register(_ sender: Any) {
-        AudioServicesPlaySystemSound(1102)
+        AudioServicesPlaySystemSound(SystemSoundID(1104))
         if nameTF.text == "" {
             
             self.showAlert(str: "enter name")
@@ -69,7 +69,7 @@ class RegisterViewController: UIViewController {
     
 
     @IBAction func cancel(_ sender: Any) {
-        AudioServicesPlaySystemSound(1101)
+        AudioServicesPlaySystemSound(1104)
         self.dismiss(animated: true)
         
     }
@@ -84,6 +84,7 @@ extension UIViewController {
         
         let alert = UIAlertController(title: "", message: str, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
+            AudioServicesPlaySystemSound(SystemSoundID(1256))
             
         }))
         

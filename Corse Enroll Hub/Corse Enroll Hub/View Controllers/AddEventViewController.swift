@@ -8,7 +8,8 @@
 import UIKit
 import EventKit
 import EventKitUI
-
+import AudioToolbox
+import AVFoundation
 class AddEventViewController: UIViewController, UINavigationControllerDelegate {
 
     
@@ -26,7 +27,8 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var dtPicker: UIDatePicker!
     
-    
+    var audioPlayer: AVAudioPlayer?
+    var timer: Timer?
     var field = ""
     var dtFomatter = DateFormatter()
     
@@ -34,6 +36,23 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate {
     var endDate: Date?
     
     override func viewDidLoad() {
+        let session = AVAudioSession.sharedInstance()
+                do {
+                    try session.setCategory(.playback, mode: .default)
+                } catch {
+                    print("Error setting up audio session: \(error.localizedDescription)")
+                }
+                
+                // Load audio file
+                if let path = Bundle.main.path(forResource: "narasimha_dialogue", ofType: "mp3") {
+                    let url = URL(fileURLWithPath: path)
+                    do {
+                        audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        audioPlayer?.prepareToPlay()
+                    } catch {
+                        print("Error loading audio file: \(error.localizedDescription)")
+                    }
+                }
         super.viewDidLoad()
 
         dtFomatter.dateFormat = "MMM dd, yyyy"
@@ -119,7 +138,7 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate {
     */
 
     @IBAction func add(_ sender: Any) {
-        
+        AudioServicesPlaySystemSound(SystemSoundID(1104))
         if titleTF.text == "" {
             
             self.showAlert(str: "Please enter title")
@@ -199,9 +218,14 @@ extension AddEventViewController: EKEventEditViewDelegate {
             let alert = UIAlertController(title: "", message: "Added successfully", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
                 
+                AudioServicesPlaySystemSound(SystemSoundID(1204))
                 self.reset()
             }))
-            
+            audioPlayer?.play()
+                     // Schedule a timer to stop audio playback after 10 seconds
+//             timer = Timer.scheduledTimer(withTimeInterval: TimeInterval.random(in: 1.0.../*5*/.0), repeats: false) { [weak self] _ in
+//                 self?.audioPlayer?.stop()
+//             }
             self.present(alert, animated: true, completion: nil)
             
             default:

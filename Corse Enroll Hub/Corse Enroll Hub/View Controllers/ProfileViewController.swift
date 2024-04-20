@@ -21,7 +21,7 @@ class ProfileViewController: UIViewController {
         emailLBL.text = user?.email ?? ""
     }
     @IBAction func logout(_ sender: Any) {
-        AudioServicesPlaySystemSound(1103)
+        AudioServicesPlaySystemSound(1104)
         do {
             
             try Auth.auth().signOut()
