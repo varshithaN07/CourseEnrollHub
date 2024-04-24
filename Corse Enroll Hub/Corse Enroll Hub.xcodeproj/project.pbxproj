@@ -15,6 +15,8 @@
 		17701C472BCDA7200070509C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17701C462BCDA7200070509C /* ProfileViewController.swift */; };
 		17A59F7C2BCDB3B800A0B808 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */; };
 		17BDD3AA2BD36C9700B92F8B /* narasimha_dialogue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17BDD3A92BD36C9700B92F8B /* narasimha_dialogue.mp3 */; };
+		17BDD3AC2BD3B2C000B92F8B /* check.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17BDD3AB2BD3B2BF00B92F8B /* check.mp3 */; };
+		17BDD3AE2BD3B2C500B92F8B /* delete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17BDD3AD2BD3B2C500B92F8B /* delete.mp3 */; };
 		17C0C65E2BD323EE00F19F3F /* Ring (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17C0C65D2BD323ED00F19F3F /* Ring (1).mp3 */; };
 		17C0C6612BD3645000F19F3F /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 17C0C6602BD3645000F19F3F /* AnimatedGradientView */; };
 		17C0C6652BD3646300F19F3F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 17C0C6642BD3646300F19F3F /* Lottie */; };
@@ -46,6 +48,8 @@
 		17C0C69B2BD364B400F19F3F /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17C0C69A2BD364B400F19F3F /* FirebaseRemoteConfigSwift */; };
 		17C0C69D2BD364B400F19F3F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17C0C69C2BD364B400F19F3F /* FirebaseStorage */; };
 		17C0C69F2BD364B400F19F3F /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 17C0C69E2BD364B400F19F3F /* FirebaseStorageCombine-Community */; };
+		17D04CE12BD6B12F00A8007F /* jill_jill_jiga_jiga.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17D04CE02BD6B12F00A8007F /* jill_jill_jiga_jiga.mp3 */; };
+		17D04D032BD9748000A8007F /* jil jil jiga jiga..._256k-mc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17D04D022BD9748000A8007F /* jil jil jiga jiga..._256k-mc.mp3 */; };
 		17F0DB662BD316A3007FB018 /* ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17F0DB652BD316A3007FB018 /* ring.mp3 */; };
 		17F8DE0D2B9AD34B0091A61D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */; };
 		49A010AB2B890BF600C7C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A010AA2B890BF600C7C581 /* AppDelegate.swift */; };
@@ -88,7 +92,11 @@
 		17701C462BCDA7200070509C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		17A59F7B2BCDB3B800A0B808 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 		17BDD3A92BD36C9700B92F8B /* narasimha_dialogue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = narasimha_dialogue.mp3; sourceTree = "<group>"; };
+		17BDD3AB2BD3B2BF00B92F8B /* check.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = check.mp3; sourceTree = "<group>"; };
+		17BDD3AD2BD3B2C500B92F8B /* delete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = delete.mp3; sourceTree = "<group>"; };
 		17C0C65D2BD323ED00F19F3F /* Ring (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ring (1).mp3"; sourceTree = "<group>"; };
+		17D04CE02BD6B12F00A8007F /* jill_jill_jiga_jiga.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jill_jill_jiga_jiga.mp3; sourceTree = "<group>"; };
+		17D04D022BD9748000A8007F /* jil jil jiga jiga..._256k-mc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "jil jil jiga jiga..._256k-mc.mp3"; sourceTree = "<group>"; };
 		17F0DB652BD316A3007FB018 /* ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ring.mp3; sourceTree = "<group>"; };
 		17F8DE0C2B9AD34B0091A61D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		49A010A72B890BF600C7C581 /* Corse Enroll Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corse Enroll Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,10 +233,14 @@
 				491910D32BB3CD4500EC0101 /* View Controllers */,
 				491E0DDF2BCF1810001715FB /* Custom Files */,
 				49A010B32B890BF700C7C581 /* Assets.xcassets */,
+				17BDD3AD2BD3B2C500B92F8B /* delete.mp3 */,
 				17F0DB652BD316A3007FB018 /* ring.mp3 */,
 				49A010B02B890BF600C7C581 /* Main.storyboard */,
 				17BDD3A92BD36C9700B92F8B /* narasimha_dialogue.mp3 */,
+				17BDD3AB2BD3B2BF00B92F8B /* check.mp3 */,
+				17D04CE02BD6B12F00A8007F /* jill_jill_jiga_jiga.mp3 */,
 				49A010B52B890BF700C7C581 /* LaunchScreen.storyboard */,
+				17D04D022BD9748000A8007F /* jil jil jiga jiga..._256k-mc.mp3 */,
 				174256D72B8959D600441531 /* GoogleService-Info.plist */,
 				17C0C65D2BD323ED00F19F3F /* Ring (1).mp3 */,
 				49A010B82B890BF700C7C581 /* Info.plist */,
@@ -395,12 +407,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D04CE12BD6B12F00A8007F /* jill_jill_jiga_jiga.mp3 in Resources */,
 				17C0C65E2BD323EE00F19F3F /* Ring (1).mp3 in Resources */,
 				17BDD3AA2BD36C9700B92F8B /* narasimha_dialogue.mp3 in Resources */,
 				49A010B72B890BF700C7C581 /* LaunchScreen.storyboard in Resources */,
+				17BDD3AE2BD3B2C500B92F8B /* delete.mp3 in Resources */,
 				17F0DB662BD316A3007FB018 /* ring.mp3 in Resources */,
 				174256D82B8959D600441531 /* GoogleService-Info.plist in Resources */,
+				17BDD3AC2BD3B2C000B92F8B /* check.mp3 in Resources */,
 				49A010B42B890BF700C7C581 /* Assets.xcassets in Resources */,
+				17D04D032BD9748000A8007F /* jil jil jiga jiga..._256k-mc.mp3 in Resources */,
 				49A010B22B890BF600C7C581 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

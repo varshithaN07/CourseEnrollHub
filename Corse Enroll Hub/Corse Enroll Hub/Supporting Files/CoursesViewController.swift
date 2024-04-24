@@ -10,6 +10,7 @@ import FirebaseAuth
 import FirebaseFirestore
 import SVProgressHUD
 import AudioToolbox
+import AVFoundation
 struct MyCourseModel: Codable {
     
     var id: String?
@@ -32,8 +33,25 @@ class CoursesViewController: UIViewController {
     @IBOutlet weak var coursesTV: UITableView!
     
     var courses: [MyCourseModel] = []
-    
+    var audioPlayer: AVAudioPlayer?
     override func viewDidLoad() {
+        let session = AVAudioSession.sharedInstance()
+                do {
+                    try session.setCategory(.playback, mode: .default)
+                } catch {
+                    print("Error setting up audio session: \(error.localizedDescription)")
+                }
+                
+                // Load audio file
+                if let path = Bundle.main.path(forResource: "delete", ofType: "mp3") {
+                    let url = URL(fileURLWithPath: path)
+                    do {
+                        audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        audioPlayer?.prepareToPlay()
+                    } catch {
+                        print("Error loading audio file: \(error.localizedDescription)")
+                    }
+                }
         super.viewDidLoad()
 
         self.navigationItem.title = "Courses"
@@ -160,6 +178,7 @@ extension CoursesViewController: UITableViewDelegate, UITableViewDataSource {
             courses.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
             self.deleteCourse(id: course.id ?? "")
+            audioPlayer?.play()
         }
     }
 

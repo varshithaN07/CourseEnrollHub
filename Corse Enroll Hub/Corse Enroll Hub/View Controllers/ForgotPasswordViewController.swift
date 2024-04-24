@@ -8,10 +8,28 @@
 import UIKit
 import SVProgressHUD
 import AudioToolbox
+import AVFoundation
 class ForgotPasswordViewController: UIViewController {
-    
+    var audioPlayer: AVAudioPlayer?
     @IBOutlet weak var emailTF: UITextField!
     override func viewDidLoad() {
+        let session = AVAudioSession.sharedInstance()
+                do {
+                    try session.setCategory(.playback, mode: .default)
+                } catch {
+                    print("Error setting up audio session: \(error.localizedDescription)")
+                }
+                
+                // Load audio file
+                if let path = Bundle.main.path(forResource: "check", ofType: "mp3") {
+                    let url = URL(fileURLWithPath: path)
+                    do {
+                        audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        audioPlayer?.prepareToPlay()
+                    } catch {
+                        print("Error loading audio file: \(error.localizedDescription)")
+                    }
+                }
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -30,6 +48,7 @@ class ForgotPasswordViewController: UIViewController {
     */
     @IBAction func send(_ sender: Any) {
         AudioServicesPlaySystemSound(1105)
+        audioPlayer?.play()
         if emailTF.text == "" {
             
             self.showAlert(str: "enter email")

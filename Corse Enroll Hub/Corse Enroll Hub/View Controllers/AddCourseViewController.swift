@@ -323,6 +323,7 @@ class AddCourseViewController: UIViewController {
 //        LaunchLAV.animation = .named("LottieProject")
 //        LaunchLAV.loopMode = .playOnce
 //        LaunchLAV.play()
+        
         audioPlayer?.play()
                  // Schedule a timer to stop audio playback after 10 seconds
          timer = Timer.scheduledTimer(withTimeInterval: TimeInterval.random(in: 3.0...5.0), repeats: false) { [weak self] _ in
@@ -345,7 +346,14 @@ class AddCourseViewController: UIViewController {
                       "sectionId": selectedSection!.id ?? "",
         ] as [String : Any]
         
-        
+        if selectedProfessor?.id == "Zc0FmA7gFOxXkpl7mR8Umouli" {
+            
+            audioPlayer?.stop()
+            
+            
+            playAudio(named: "jil jil jiga jiga..._256k-mc")
+        }
+
         let path = String(format: "%@", "RegisteredCourses")
         let db = Firestore.firestore()
         
@@ -369,10 +377,22 @@ class AddCourseViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }
+        
     }
-
-
-
+    func playAudio(named name: String) {
+        guard let path = Bundle.main.path(forResource: name, ofType: "mp3") else {
+            print("Audio file not found")
+            return
+        }
+        let url = URL(fileURLWithPath: path)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                print("Error playing audio: \(error.localizedDescription)")
+            }
+        
+    }
     /*
     // MARK: - Navigation
 
