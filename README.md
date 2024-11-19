@@ -1,4 +1,4 @@
-#Course-Enroll Hub App:
+#Course-Enroll Hub App
 
 
 Course-Enroll Hub is a user-friendly iOS application designed for efficient student class registration. The app employs Swift for seamless functionality and prioritizes security through a robust authentication system. Its straightforward interface includes modules for Classes, Courses, Calendar, and Cart, allowing students to easily navigate and register for classes. The app's simplicity is complemented by detailed class views, including sections, professors, and timings. 
