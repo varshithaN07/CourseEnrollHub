@@ -7,9 +7,9 @@ With a focus on performance optimization and adherence to best practices, Course
 
 Roles& Responsibilities:<br/>
 Agraja Gottipati            -    Deployment and DB Management Expert<br/>
-Varshitha Nalluri            -    Module Designer and Documentation Specialist<br/>
+Varshitha Nalluri            -    Module Designer and Testing Specialist<br/>
 Teja Kumar Muppala                    -    UI/UX Design Lead<br/>
-Khalida Parveen                -    Quality Assurance and Testing Specialist<br/>
+Khalida Parveen                -    Quality Assurance and Documentation specialist <br/>
 
 **Sprint 02**
 This week we have finalized the project and started building UI Prototypes. Need to build database for the login page and for the project for the upcoming couple of weeks.
